@@ -1,0 +1,52 @@
+{
+	"Values": [
+		{
+			"month": "Jan 2017",
+			"value": 900
+		},
+		{
+			"month": "Feb 2017",
+			"value": 1200
+		},
+		{
+			"month": "Mar 2017",
+			"value": 1200
+		},
+		{
+			"month": "Apr 2017",
+			"value": 1800
+		},
+		{
+			"month": "May 2017",
+			"value": 2500
+		},
+		{
+			"month": "Jun 2017",
+			"value": 3000
+		},
+		{
+			"month": "Jul 2017",
+			"value": 3400
+		},
+		{
+			"month": "Aug 2017",
+			"value": 5000
+		},
+		{
+			"month": "Sep 2017",
+			"value": 5800
+		},
+		{
+			"month": "Oct 2017",
+			"value": 6100
+		},
+		{
+			"month": "Nov 2017",
+			"value": 7300
+		},
+		{
+			"month": "Dec 2017",
+			"value": 17500
+		}
+	]
+}

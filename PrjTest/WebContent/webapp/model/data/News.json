@@ -1,0 +1,23 @@
+{
+	"News": [
+		{
+			"content": "The best value!",
+			"subheader": "Early Adopter of the bitcoin",
+			"date": "2016-12-07T09:42:32.910Z",
+			"image": "images/bitcoin.jpg"
+		},
+		{
+			"content": "Your first bitcoin? Don't worry. There are plenty of them available.",
+			"subheader": "Find your favorite one",
+			"date": "2016-12-06T00:00:00.000Z",
+			"image": "images/bitcoins.jpg",
+			"state": "Loading"
+		},
+		{
+			"content": "Better value!",
+			"subheader": "Early Adopter of the etherum",
+			"date": "2016-12-07T09:42:32.910Z",
+			"image": "images/bitbybit.jpg"
+		}
+	]
+}
