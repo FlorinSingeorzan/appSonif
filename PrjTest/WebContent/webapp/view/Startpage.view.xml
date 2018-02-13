@@ -141,14 +141,14 @@
 			<layout:HorizontalLayout allowWrapping="true">
 				<GenericTile
 					header="{i18n>startpageLineTile1Title}"
-					subheader="{i18n>startpageLineTile1SubTitle}"
 					mode="LineMode"
 					class="sapUiTinyMarginBegin"
-					press="externalLink" />
+					press="externalLinkWhatIsCrypto" />
 				<GenericTile
 					header="{i18n>startpageLineTile2Title}"
 					mode="LineMode"
-					class="sapUiTinyMarginBegin" />
+					class="sapUiTinyMarginBegin"
+					press="externalLinkExchanges" />
 			</layout:HorizontalLayout>
 		</layout:VerticalLayout>
 	</Page>
