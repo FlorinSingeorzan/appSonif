@@ -70,7 +70,7 @@ sap.ui.define([
 			window.open("https://stackoverflow.com/questions/18402522/button-action-to-navigate-another-url-link-in-sapui5","_blank");
 		},
 		mitCrule: function(){
-			//timeee
+			//TIMEA	
 		}
 	});
 });
