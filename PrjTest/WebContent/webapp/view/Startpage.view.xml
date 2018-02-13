@@ -4,14 +4,44 @@
 	xmlns="sap.m"
 	xmlns:layout="sap.ui.layout"
 	xmlns:microchart="sap.suite.ui.microchart">
-	<Page title="{i18n>title}">
+	<Page showHeader="false" floatingFooter="true" backgroundDesign="Solid" >
+		<Toolbar >
+		<Text text="generic toolbar"></Text>
+		
+		</Toolbar>
 		<layout:VerticalLayout class="sapUiResponsiveMargin">
 			<Title
 				titleStyle="H2"
 				text="{i18n>startpageTilesGroupTitle}"
 				class="sapUiTinyMarginBegin" />
+		<FlexBox width="auto" height="auto"  >
 		<layout:HorizontalLayout allowWrapping="true">
 		
+		
+			<SlideTile
+				class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+				tiles="{news>/News}">
+				<GenericTile
+					backgroundImage="{news>image}"
+					state="{news>state}"
+					frameType="TwoByOne"
+					press="onNavToReviews">
+					<tileContent>
+						<TileContent
+							footer="{
+								path: 'news>date',
+								formatter: '.formatJSONDate'
+							}">
+							<content>
+								<NewsContent
+									contentText="{news>content}"
+									subheader="{news>subheader}">
+								</NewsContent>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+			</SlideTile>
 			<GenericTile
 				class="sapUiTinyMarginBegin sapUiTinyMarginTop"
 				header="{i18n>startpagePFTileTitle}"
@@ -108,48 +138,24 @@
 				</tileContent>
 			</GenericTile>
 			
-			<SlideTile
-				class="sapUiTinyMarginBegin sapUiTinyMarginTop"
-				tiles="{news>/News}">
-				<GenericTile
-					backgroundImage="{news>image}"
-					state="{news>state}"
-					frameType="TwoByOne"
-					press="onNavToReviews">
-					<tileContent>
-						<TileContent
-							footer="{
-								path: 'news>date',
-								formatter: '.formatJSONDate'
-							}">
-							<content>
-								<NewsContent
-									contentText="{news>content}"
-									subheader="{news>subheader}">
-								</NewsContent>
-							</content>
-						</TileContent>
-					</tileContent>
-				</GenericTile>
-			</SlideTile>
+			
 			
 		</layout:HorizontalLayout>
-			<Title
-				titleStyle="H2"
-				text="{i18n>startpageLinksGroupTitle}"
-				class="sapUiTinyMarginBegin sapUiMediumMarginTop" />
-			<layout:HorizontalLayout allowWrapping="true">
+					
+			</FlexBox>
+			<FlexBox width="auto" height="auto"  class="sapUiTinyMarginBegin" justifyContent="Start">
+					<layout:HorizontalLayout allowWrapping="true">
 				<GenericTile
 					header="{i18n>startpageLineTile1Title}"
 					mode="LineMode"
-					class="sapUiTinyMarginBegin"
 					press="externalLinkWhatIsCrypto" />
 				<GenericTile
 					header="{i18n>startpageLineTile2Title}"
 					mode="LineMode"
-					class="sapUiTinyMarginBegin"
+
 					press="externalLinkExchanges" />
-			</layout:HorizontalLayout>
+				</layout:HorizontalLayout>
+			</FlexBox>
 		</layout:VerticalLayout>
 	</Page>
 </mvc:View>
