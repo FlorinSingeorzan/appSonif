@@ -61,7 +61,7 @@ sap.ui.define([
 			return this.getOwnerComponent().getRouter();
 		},
 		externalLink: function(){
-			window.location.replace("https://stackoverflow.com/questions/18402522/button-action-to-navigate-another-url-link-in-sapui5");
+			window.open("https://stackoverflow.com/questions/18402522/button-action-to-navigate-another-url-link-in-sapui5","_blank");
 		}
 	});
 });
