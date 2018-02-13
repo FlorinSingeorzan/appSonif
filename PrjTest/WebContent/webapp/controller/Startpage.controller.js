@@ -60,20 +60,17 @@ sap.ui.define([
 		getRouter: function() {
 			return this.getOwnerComponent().getRouter();
 		},
-<<<<<<< HEAD
 		externalLinkWhatIsCrypto: function() {
 			window.open("https://cointelegraph.com/bitcoin-for-beginners/what-are-cryptocurrencies#invest","_blank");
 		},
 		externalLinkExchanges: function() {
 			window.open("https://www.investopedia.com/articles/investing/111914/look-most-popular-bitcoin-exchanges.asp","_blank");
-=======
+		},
 		externalLink: function(){
 			window.open("https://stackoverflow.com/questions/18402522/button-action-to-navigate-another-url-link-in-sapui5","_blank");
 		},
-		
 		mitCrule: function(){
 			//timea e cea mai cea
->>>>>>> branch 'master' of https://github.com/FlorinSingeorzan/appSonif.git
 		}
 	});
 });
