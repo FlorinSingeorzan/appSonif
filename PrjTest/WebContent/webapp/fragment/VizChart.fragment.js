@@ -32,7 +32,7 @@ sap.ui.define([
 						value: "{value}"
 					})
 				],
-				data: "{/Values6}"
+				data: "{/Values}"
 			});
 			
 			oVizFrame.setDataset(oDataset3);
