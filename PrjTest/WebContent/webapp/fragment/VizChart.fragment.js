@@ -35,7 +35,7 @@ sap.ui.define([
 				data: "{/Values}"
 			});
 			
-			oVizFrame.setDataset(oDataset3);
+			oVizFrame.setDataset(oDataset);
 
 			oVizFrame.addFeed(new FeedItem({
 				uid: "valueAxis",
