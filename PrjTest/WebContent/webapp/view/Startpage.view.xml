@@ -14,7 +14,7 @@
 				titleStyle="H2"
 				text="{i18n>startpageTilesGroupTitle}"
 				class="sapUiTinyMarginBegin" />
-		<FlexBox width="auto" height="auto"  >
+		<FlexBox width="auto" height="36rem"  >
 		<layout:HorizontalLayout allowWrapping="true">
 		
 		
