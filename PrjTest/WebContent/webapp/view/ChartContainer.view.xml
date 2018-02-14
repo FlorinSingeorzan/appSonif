@@ -25,10 +25,10 @@
 					}">
 					<suite:ChartContainerContent
 						icon="sap-icon://vertical-bullet-chart"
-						title="{i18n>chartContainerBulletChart3months}">
+						title="{i18n>chartContainerBulletChartContentTitle}">
 						<suite:content>
 							<core:Fragment
-								fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChart12"
+								fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChart"
 								type="JS" />
 						</suite:content>
 					</suite:ChartContainerContent>
