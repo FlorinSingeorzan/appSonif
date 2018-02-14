@@ -112,6 +112,11 @@
 					"pattern": "reviews",
 					"name": "reviews",
 					"target": "reviews"
+				},
+				{
+					"pattern": "newsFeed",
+					"name": "newsFeed",
+					"target": "newsFeed"
 				}
 			],
 			"targets": {
@@ -129,6 +134,10 @@
 				},
 				"reviews": {
 					"viewName": "Reviews",
+					"viewLevel": 1
+				},
+				"newsFeed": {
+					"viewName": "NewsFeed",
 					"viewLevel": 1
 				}
 			}

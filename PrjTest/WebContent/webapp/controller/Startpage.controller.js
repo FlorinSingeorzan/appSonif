@@ -53,7 +53,7 @@ sap.ui.define([
 
 		onNavToReviews: function (event) {
 			if (event.getSource().getState() === MobileLibrary.LoadState.Loaded) {
-				this.getRouter().navTo("reviews");
+				this.getRouter().navTo("newsFeed");
 			}
 		},
 
