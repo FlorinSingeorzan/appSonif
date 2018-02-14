@@ -13,6 +13,5 @@
 			
 				</layout:HorizontalLayout>
 			</FlexBox>
-		
 	</Page>
 </mvc:View>

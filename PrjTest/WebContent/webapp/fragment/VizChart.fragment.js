@@ -20,7 +20,7 @@ sap.ui.define([
 					applicationSet: 'fiori'
 				}
 			});
-
+			
 			var oDataset = new FlattenedDataset({
 				dimensions: new DimensionDefinition({
 					name: "Bitcoin evolution in 2017",
@@ -34,15 +34,15 @@ sap.ui.define([
 				],
 				data: "{/Values}"
 			});
-
-			oVizFrame.setDataset(oDataset);
+			
+			oVizFrame.setDataset(oDataset3);
 
 			oVizFrame.addFeed(new FeedItem({
 				uid: "valueAxis",
 				type: "Measure",
 				values: [ "Maximum values" ]
 			}));
-
+			
 			oVizFrame.addFeed(new FeedItem({
 				uid: "categoryAxis",
 				type: "Dimension",
@@ -62,7 +62,7 @@ sap.ui.define([
 					}
 				}
 			});
-
+			
 			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/PrjTestData.json");
 			var oModel = new JSONModel(sDataPath);
 			controller.getView().setModel(oModel);

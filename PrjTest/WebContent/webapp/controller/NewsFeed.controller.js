@@ -9,4 +9,4 @@ sap.ui.define([
 			oRouter.navTo("home");
 		}
 	});
-}); 
+});  
