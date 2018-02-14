@@ -108,7 +108,7 @@
 					"name": "chartContainer",
 					"target": "chartContainer"
 				},
-				{
+				{ 
 					"pattern": "reviews",
 					"name": "reviews",
 					"target": "reviews"

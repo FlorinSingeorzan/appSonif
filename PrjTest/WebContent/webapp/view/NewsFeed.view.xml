@@ -10,7 +10,7 @@
 		backgroundDesign="Solid">
 		<FlexBox width="auto" height="auto"  class="sapUiLargeMargin" justifyContent="Start" backgroundDesign="Translucent">
 				<layout:HorizontalLayout allowWrapping="true">
-				
+			
 				</layout:HorizontalLayout>
 			</FlexBox>
 		

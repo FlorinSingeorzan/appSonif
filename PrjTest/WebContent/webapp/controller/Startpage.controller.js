@@ -56,7 +56,6 @@ sap.ui.define([
 				this.getRouter().navTo("newsFeed");
 			}
 		},
-
 		getRouter: function() {
 			return this.getOwnerComponent().getRouter();
 		},
