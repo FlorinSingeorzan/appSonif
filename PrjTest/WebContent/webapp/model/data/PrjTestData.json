@@ -1,5 +1,45 @@
 {
-	"Values": [
+	"Values3": [
+		{
+			"month": "Oct 2017",
+			"value": 6100
+		},
+		{
+			"month": "Nov 2017",
+			"value": 7300
+		},
+		{
+			"month": "Dec 2017",
+			"value": 17500
+		}
+	],
+	"Values6": [
+		{
+			"month": "Jul 2017",
+			"value": 3400
+		},
+		{
+			"month": "Aug 2017",
+			"value": 5000
+		},
+		{
+			"month": "Sep 2017",
+			"value": 5800
+		},
+		{
+			"month": "Oct 2017",
+			"value": 6100
+		},
+		{
+			"month": "Nov 2017",
+			"value": 7300
+		},
+		{
+			"month": "Dec 2017",
+			"value": 17500
+		}
+	],
+	"Values12": [
 		{
 			"month": "Jan 2017",
 			"value": 900

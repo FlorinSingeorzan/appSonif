@@ -25,7 +25,25 @@
 					}">
 					<suite:ChartContainerContent
 						icon="sap-icon://vertical-bullet-chart"
-						title="{i18n>chartContainerBulletChartContentTitle}">
+						title="{i18n>chartContainerBulletChart3months}">
+						<suite:content>
+						<core:Fragment
+								fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChart"
+								type="JS" />
+						</suite:content>
+					</suite:ChartContainerContent>
+					<suite:ChartContainerContent
+						icon="sap-icon://vertical-bullet-chart"
+						title="{i18n>chartContainerBulletChart6months}">
+						<suite:content>
+						<core:Fragment
+								fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChart"
+								type="JS" />
+						</suite:content>
+					</suite:ChartContainerContent>
+					<suite:ChartContainerContent
+						icon="sap-icon://vertical-bullet-chart"
+						title="{i18n>chartContainerBulletChart12months}">
 						<suite:content>
 							<core:Fragment
 								fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChart"

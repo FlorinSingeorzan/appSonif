@@ -12,7 +12,25 @@ sap.ui.define([
 	return sap.ui.jsfragment("sap.suite.ui.commons.PrjTest.fragment.VizChart", {
 		createContent: function(controller) {
 
-			var oVizFrame = new VizFrame({
+			var oVizFrame3 = new VizFrame({
+				height: "700px",
+				width: "100%",
+				vizType: "vertical_bullet",
+				uiConfig: {
+					applicationSet: 'fiori'
+				}
+			});
+			
+			var oVizFrame6 = new VizFrame({
+				height: "700px",
+				width: "100%",
+				vizType: "vertical_bullet",
+				uiConfig: {
+					applicationSet: 'fiori'
+				}
+			});
+			
+			var oVizFrame12 = new VizFrame({
 				height: "700px",
 				width: "100%",
 				vizType: "vertical_bullet",
@@ -21,7 +39,7 @@ sap.ui.define([
 				}
 			});
 
-			var oDataset = new FlattenedDataset({
+			var oDataset3 = new FlattenedDataset({
 				dimensions: new DimensionDefinition({
 					name: "Bitcoin evolution in 2017",
 					value: "{month}"
@@ -32,24 +50,108 @@ sap.ui.define([
 						value: "{value}"
 					})
 				],
-				data: "{/Values}"
+				data: "{/Values3}"
+			});
+			
+			var oDataset6 = new FlattenedDataset({
+				dimensions: new DimensionDefinition({
+					name: "Bitcoin evolution in 2017",
+					value: "{month}"
+				}),
+				measures: [
+					new MeasureDefinition({
+						name: "Maximum values",
+						value: "{value}"
+					})
+				],
+				data: "{/Values6}"
+			});
+			
+			var oDataset12 = new FlattenedDataset({
+				dimensions: new DimensionDefinition({
+					name: "Bitcoin evolution in 2017",
+					value: "{month}"
+				}),
+				measures: [
+					new MeasureDefinition({
+						name: "Maximum values",
+						value: "{value}"
+					})
+				],
+				data: "{/Values12}"
 			});
 
-			oVizFrame.setDataset(oDataset);
+			oVizFrame3.setDataset(oDataset3);
+			
+			oVizFrame6.setDataset(oDataset6);
+			
+			oVizFrame12.setDataset(oDataset12);
 
-			oVizFrame.addFeed(new FeedItem({
+			oVizFrame3.addFeed(new FeedItem({
+				uid: "valueAxis",
+				type: "Measure",
+				values: [ "Maximum values" ]
+			}));
+			
+			oVizFrame6.addFeed(new FeedItem({
+				uid: "valueAxis",
+				type: "Measure",
+				values: [ "Maximum values" ]
+			}));
+			
+			oVizFrame12.addFeed(new FeedItem({
 				uid: "valueAxis",
 				type: "Measure",
 				values: [ "Maximum values" ]
 			}));
 
-			oVizFrame.addFeed(new FeedItem({
+			oVizFrame3.addFeed(new FeedItem({
+				uid: "categoryAxis",
+				type: "Dimension",
+				values: [ "Bitcoin evolution in 2017" ]
+			}));
+			
+			oVizFrame6.addFeed(new FeedItem({
+				uid: "categoryAxis",
+				type: "Dimension",
+				values: [ "Bitcoin evolution in 2017" ]
+			}));
+			
+			oVizFrame12.addFeed(new FeedItem({
 				uid: "categoryAxis",
 				type: "Dimension",
 				values: [ "Bitcoin evolution in 2017" ]
 			}));
 
-			oVizFrame.setVizProperties({
+			oVizFrame3.setVizProperties({
+				plotArea: {
+					showGap: true
+				},
+				title: {
+					visible: false
+				},
+				valueAxis: {
+					title: {
+						text: controller.getOwnerComponent().getModel("i18n").getResourceBundle().getText("chartContainerBitcoinValues")
+					}
+				}
+			});
+			
+			oVizFrame6.setVizProperties({
+				plotArea: {
+					showGap: true
+				},
+				title: {
+					visible: false
+				},
+				valueAxis: {
+					title: {
+						text: controller.getOwnerComponent().getModel("i18n").getResourceBundle().getText("chartContainerBitcoinValues")
+					}
+				}
+			});
+			
+			oVizFrame12.setVizProperties({
 				plotArea: {
 					showGap: true
 				},
