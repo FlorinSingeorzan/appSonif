@@ -2,22 +2,25 @@
 	"News": [
 		{
 			"content": "The best value!",
-			"subheader": "Early Adopter of the bitcoin",
-			"date": "2016-12-07T09:42:32.910Z",
-			"image": "images/bitcoin.jpg"
+			"title": "test",
+			"source": "Guardian",
+			"date": "2016-12-07",
+			"image": "images/bitcoin.jpg",
+			"text": "Bitcoin activity suggests risk aversion is picking up, Peter Boockvar warns 16 Hours Ago | 01:58 Bitcoin topped the psychologically key $9,000 level to hit a 10-day high Wednesday amid improved sentiment about government regulation. The cryptocurrency climbed 9.7 percent to $9,346, its highest since Feb. 4, according to CoinDesk's bitcoin price index, which tracks prices from four major exchanges. As of 12:50 p.m. ET, Bitcoin was about 9 percent higher near $9,313. Sentiment has changed. The Senate hearing a week ago was positive. That definitely helped to create a more optimistic view, said Nick Kirk, quantitative developer and data scientist at Cypher Capital, a cryptocurrency trading firm. He added that news out of South Korea has been OK. The latest reports about South Korean regulation marked a toned-down approach, in contrast to fears in the last several weeks that the government would close down cryptocurrency exchanges.English-language news site BusinessKorea reported Monday local time that a government official involved with a virtual currency task force said Sunday that the country is considering additional regulation similar to the BitLicense the New York State Department of Financial Services requires for cryptocurrency exchanges in the state."
 		},
 		{
-			"content": "Your first bitcoin? Don't worry. There are plenty of them available.",
-			"subheader": "Find your favorite one",
-			"date": "2016-12-06T00:00:00.000Z",
+			"content": "Cryptocurrency news",
+			"source": "CNBC",
+			"date": "2016-12-06",
 			"image": "images/bitcoins.jpg",
-			"state": "Loading"
+			"text": "Bitcoin has struggled in the last two months amid some back-and-forth on cryptocurrency policy by South Korean regulators. The government did enact a ban on anonymous trading accounts in late January. Japanese cryptocurrency exchange CoinCheck, which suffered the largest hack in the industry, also successfully resumed yen withdrawals on Tuesday. Bitcoin remains more than 30 percent lower for the year so far. But with Wednesday's gains, bitcoin is up about $3,000 from two-month lows hit last week, just ahead of a Senate Banking, Housing and Urban Affairs Committee hearing on cryptocurrencies. The chairmen of the U.S. Securities and Exchange Commission and Commodity Futures Trading Commission said that different federal agencies are trying to coordinate policy on cryptocurrencies and protect consumers. Their comments also focused on regulating sales of new digital coins, or initial coin offerings. The recent CFTC and SEC talks have been positive towards 'pure cryptocurrencies' like bitcoin that began with mining as opposed to an ICO, painting a bullish medium-long term picture, said Alex Sunnarborg, founding partner of Tetras Capital. He added that other developments helping the longer-term outlook for bitcoin include the impressive growth of the Lightning Network, a system that intends to accelerate bitcoin transaction speeds."
 		},
 		{
-			"content": "Better value!",
-			"subheader": "Early Adopter of the etherum",
-			"date": "2016-12-07T09:42:32.910Z",
-			"image": "images/bitbybit.jpg"
+			"content": "European Central Bank want to ban bitcoin",
+			"source": "fortune.com",
+			"date": "2016-12-07",
+			"image": "images/bitbybit.jpg",
+			"text": "Cryptocurrencies are recording their biggest gains in weeks after the president of the European Central Bank shrugged off talk of a ban. Bitcoin was up more than 7% in early trading Wednesday, gaining over $400 and adding $7.7 billion in market capitalization. In the past week, Bitcoin's value has bounced back from recent turbulence, adding over $1,100 in value and over $19 billion in market cap. While European banking officials warned consumers about the highly volatile nature of Bitcoin, Ethereum, Ripple and other cryptocurrencies, Mario Draghi, president of the European Central Bank, said in a video response to user submitted questions that no ban or regulation was forthcoming. Many of you posted questions about whether the ECB is going to ban Bitcoins or it''s going to regulate Bitcoins, he said. I have to say it's not the ECB's responsibility to do that. Traders had worried that officials would impose regulations on the currency after the head of the head of the World Bank compared cryptocurrencies to Ponzi schemes  last week. Bitcoin and other digital currencies aren't out of the woods yet, though. While the ECB isn't planning any new rules, French Finance Minister Bruno Le Maire said in December he will ask his counterparts in the Group of 20 nations to consider joint regulation of bitcoin. That group is scheduled to meet in March. Bitcoin recorded the biggest gains on the news, but all major cryptocurrencies saw their value increase. Ethereum was up 5.8% just before 9am ET, Ripple eked out a 4% gain. The biggest winner of the morning, though, was Litecoin, which soared 38%."
 		}
 	]
 }

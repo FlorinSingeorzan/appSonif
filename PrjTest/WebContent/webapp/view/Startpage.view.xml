@@ -25,7 +25,7 @@
 					backgroundImage="{news>image}"
 					state="{news>state}"
 					frameType="TwoByOne"
-					press="onNavToReviews">
+					press="onNavToNewsFeed">
 					<tileContent>
 						<TileContent
 							footer="{
@@ -35,7 +35,7 @@
 							<content>
 								<NewsContent
 									contentText="{news>content}"
-									subheader="{news>subheader}">
+									subheader="{news>source}">
 								</NewsContent>
 							</content>
 						</TileContent>
