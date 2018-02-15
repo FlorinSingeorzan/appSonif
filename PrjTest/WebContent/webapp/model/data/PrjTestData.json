@@ -75,5 +75,36 @@
 			"month": "Dec 2017",
 			"value": 17500
 		}
+	],
+	"ValuesWeek": [
+		
+		{
+			"day": "Monday",
+			"value": 8242.27
+		},
+		{
+			"day": "Tuesday",
+			"value": 7003.39
+		},
+		{
+			"day": "Wednesday",
+			"value": 7744.56
+		},
+		{
+			"day": "Thursday",
+			"value": 7658.00
+		},
+		{
+			"day": "Friday",
+			"value": 8217.39
+		},
+		{
+			"day": "Saturday",
+			"value": 8750.06
+		},
+		{
+			"day": "Sunday",
+			"value": 8507.86
+		}
 	]
 }
