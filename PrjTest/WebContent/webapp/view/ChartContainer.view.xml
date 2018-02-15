@@ -24,6 +24,15 @@
 						formatter: 'jQuery.sap.formatMessage'
 					}">
 					<suite:ChartContainerContent
+						icon="sap-icon://appointment-2"
+						title="{i18n>chartContainerBulletChartContentTitle6months}">
+						<suite:content>
+							<core:Fragment
+								fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChart6"
+								type="JS" />
+						</suite:content>
+					</suite:ChartContainerContent>
+					<suite:ChartContainerContent
 						icon="sap-icon://vertical-bullet-chart"
 						title="{i18n>chartContainerBulletChartContentTitle}">
 						<suite:content>
