@@ -19,7 +19,8 @@
 					<FeedListItem
 						sender="{news>content}"
 						icon="{news>image}" 	
-						iconActive="false"
+						iconPress="onOriginalPostPage"
+						senderPress="onOriginalPostPage"
 						iconDensityAware="false"
 						info="{news>source}"
 						timestamp="{news>date}"
