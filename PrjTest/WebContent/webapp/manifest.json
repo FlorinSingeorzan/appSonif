@@ -32,7 +32,8 @@
 		"supportedThemes": [
 			"sap_hcb",
 			"sap_hcw",
-			"sap_belize"
+			"sap_belize",
+			"sap_belize_plus"
 		]
 	},
 	"sap.ui5": {
@@ -94,7 +95,7 @@
 				"viewPath": "sap.suite.ui.commons.PrjTest.view",
 				"controlId": "PrjTestApp",
 				"controlAggregation": "pages",
-				"transition": "slide",
+				"transition": "fade",
 				"bypassed": {
 					"target": [
 						"startpage"

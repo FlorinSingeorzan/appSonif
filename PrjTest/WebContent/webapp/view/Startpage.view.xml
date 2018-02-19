@@ -5,8 +5,8 @@
 	xmlns:core="sap.ui.core"
 	xmlns:layout="sap.ui.layout"
 	xmlns:microchart="sap.suite.ui.microchart">
-	<Page showHeader="false" floatingFooter="true" backgroundDesign="Info" >
-		<Toolbar height="44px" >
+	<Page showHeader="false"  backgroundDesign="Info" >
+		<Toolbar height="43px" >
 		<FlexBox width="auto" height="44px" class="sapUiNoMargin"  >
 			<Button class="sapUiNoMargin homeButton" icon="sap-icon://lead-outdated" text="SONIF" type="Emphasized" press="onPress" ariaLabelledBy="editButtonLabel"/> <!-- Inca nu functioneaza, nici border din css -->
 		</FlexBox>
