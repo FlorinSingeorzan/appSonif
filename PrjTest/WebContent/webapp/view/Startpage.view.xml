@@ -20,8 +20,6 @@
 				class="sapUiTinyMarginBegin" />
 		<FlexBox width="auto" height="36rem"  >
 		<layout:HorizontalLayout allowWrapping="true">
-		
-		
 			<SlideTile
 				class="sapUiTinyMarginBegin sapUiTinyMarginTop"
 				tiles="{news>/News}">
@@ -49,7 +47,6 @@
 			<GenericTile
 				class="sapUiTinyMarginBegin sapUiTinyMarginTop"
 				header="{i18n>startpagePFTileTitle}"
-				subheader="{i18n>startpagePFTileSubTitle}"
 				press="onNavToProcessFlow">
 				<tileContent>
 					<TileContent>
