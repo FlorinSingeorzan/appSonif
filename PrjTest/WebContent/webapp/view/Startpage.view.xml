@@ -11,7 +11,7 @@
 			<Button class="sapUiNoMargin homeButton" icon="sap-icon://lead-outdated" text="SONIF" type="Emphasized" press="onPress" ariaLabelledBy="editButtonLabel"/> <!-- Inca nu functioneaza, nici border din css -->
 		</FlexBox>
 		<Text text="Wellcome"></Text>
-		
+	
 		</Toolbar>
 		<layout:VerticalLayout class="sapUiResponsiveMargin">
 			<Title
