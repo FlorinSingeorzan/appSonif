@@ -13,6 +13,11 @@ sap.ui.define([
 			var oModel = new JSONModel(sDataPath);
 			this.getView().setModel(oModel, "news");
 		},
+		navHome: function(){
+//			this.getOwnerComponent().getRouter().navTo("home");
+//			window.location.reload();
+			oList.getModel().updateBindings();
+		},
 
 		getProgress: function(aNodes) {
 			if (!aNodes || aNodes.length === 0) {
