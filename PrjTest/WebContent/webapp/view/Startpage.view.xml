@@ -3,24 +3,15 @@
 	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart">
 	<Page showHeader="false" backgroundDesign="Info">
 		<!-- <subHeader class="subHeaderDesign"> -->
-		<Toolbar height="43px" class="subHeaderDesign">
-			<FlexBox width="auto" height="44px" class="sapUiNoMargin">
-				<Button class="sapUiNoMargin homeButton homeButtonH" icon="sap-icon://co"
-					text="SONIF" type="Emphasized" press="navHome" ariaLabelledBy="editButtonLabel" /> <!-- Inca nu functioneaza, nici border din css -->
-			</FlexBox>
-			<Text text="Wellcome"></Text>
-
-		</Toolbar>
+		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 		<!-- </subHeader> -->
 		<FlexBox width="auto" height="auto" justifyContent="Center"
 			backgroundDesign="Translucent">
 			<layout:VerticalLayout class="sapUiResponsiveMargin">
-				<Title titleStyle="H2" text="{i18n>startpageTilesGroupTitle}"
-					class="sapUiTinyMarginBegin" />
+				<Title titleStyle="H2" text="{i18n>startpageTilesGroupTitle}"/>
 				<FlexBox width="auto" height="36rem">
 					<layout:HorizontalLayout allowWrapping="true">
-						<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
-							tiles="{news>/News}">
+						<SlideTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" tiles="{news>/News}">
 							<GenericTile backgroundImage="{news>
 							image}"
 								state="{news>state}" frameType="TwoByOne" press="onNavToNewsFeed">
@@ -39,7 +30,7 @@
 								</tileContent>
 							</GenericTile>
 						</SlideTile>
-						<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
 							header="{i18n>startpagePFTileTitle}" press="onNavToProcessFlow">
 							<tileContent>
 								<TileContent>
@@ -55,7 +46,7 @@
 							</tileContent>
 						</GenericTile>
 
-						<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
 							header="{
 					parts: [
 						'i18n>startpageCCTileTitle',
@@ -94,7 +85,7 @@
 							</tileContent>
 						</GenericTile>
 
-						<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
 							header="{i18n>startpageUserReviewsTileTitle}" press="onNavToReviews">
 							<tileContent>
 								<TileContent>
@@ -110,7 +101,7 @@
 							</tileContent>
 						</GenericTile>
 
-						<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
 							header="{i18n>startpageTestResultsTileTitle}" subheader="{i18n>startpageTestResultsTileSubTitle}"
 							press="onNavToChartContainer">
 							<tileContent>
@@ -138,7 +129,7 @@
 
 			</layout:VerticalLayout>
 		</FlexBox>
-
+		
 	</Page>
 
 </mvc:View>

@@ -4,10 +4,9 @@
 	xmlns:suite="sap.suite.ui.commons"
 	controllerName="sap.suite.ui.commons.PrjTest.controller.Reviews">
 	<Page
-		title="{i18n>timelineTitle}"
-		showNavButton="true"
-		navButtonPress="onNavButtonPressed"
+		showHeader="false"
 		backgroundDesign="Solid">
+		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 		<Toolbar>
 			<Label text="{i18n>layoutSwitchLabel}" />
 			<Switch change="onHorizontalSwitchChange" />

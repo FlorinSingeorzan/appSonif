@@ -1,0 +1,12 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="sap.suite.ui.commons.PrjTest.controller.Toolbar"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Toolbar height="43px" class="subHeaderDesign">
+		<FlexBox width="auto" height="42px" class="sapUiNoMargin">
+			<Button class="sapUiNoMargin homeButton homeButtonH" icon="sap-icon://co"
+				text="SONIF" type="Emphasized" press="navHome" ariaLabelledBy="editButtonLabel" />
+		</FlexBox>
+
+
+	</Toolbar>
+</core:View>

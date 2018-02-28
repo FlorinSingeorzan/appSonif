@@ -14,9 +14,8 @@ sap.ui.define([
 			this.getView().setModel(oModel, "news");
 		},
 		navHome: function(){
-//			this.getOwnerComponent().getRouter().navTo("home");
+			this.getOwnerComponent().getRouter().navTo("home");
 //			window.location.reload();
-			oList.getModel().updateBindings();
 		},
 
 		getProgress: function(aNodes) {
