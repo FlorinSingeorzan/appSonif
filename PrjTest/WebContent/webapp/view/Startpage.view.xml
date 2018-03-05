@@ -8,12 +8,12 @@
 		<FlexBox width="auto" height="auto" justifyContent="Center"
 			backgroundDesign="Translucent">
 			<layout:VerticalLayout class="sapUiResponsiveMargin">
-				<Title titleStyle="H2" text="{i18n>startpageTilesGroupTitle}"/>
-				<FlexBox width="auto" height="36rem">
+				<Title titleStyle="H2" text="{i18n>startpageTilesGroupTitle}" />
+				<FlexBox width="auto" height="38rem">
 					<layout:HorizontalLayout allowWrapping="true">
-						<SlideTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" tiles="{news>/News}">
-							<GenericTile backgroundImage="{news>
-							image}"
+						<SlideTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+							tiles="{news>/News}">
+							<GenericTile backgroundImage="{news>2image}"
 								state="{news>state}" frameType="TwoByOne" press="onNavToNewsFeed">
 								<tileContent>
 									<TileContent
@@ -30,6 +30,21 @@
 								</tileContent>
 							</GenericTile>
 						</SlideTile>
+						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+							header="{i18n>startpageCurrencyTitle}" press="onNavToCurrency">
+							<tileContent>
+								<TileContent>
+									<content>
+										<NumericContent scale="%"
+											value="{
+									path: 'process>/Nodes',
+									formatter: '.getProgress'
+								}"
+											icon="sap-icon://collections-insight" />
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
 						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
 							header="{i18n>startpagePFTileTitle}" press="onNavToProcessFlow">
 							<tileContent>
@@ -116,20 +131,18 @@
 
 					</layout:HorizontalLayout>
 				</FlexBox>
-				<FlexBox width="auto" height="auto" class="sapUiTinyMarginBegin"
-					justifyContent="Start">
-					<layout:HorizontalLayout allowWrapping="true">
-						<GenericTile header="{i18n>startpageLineTile1Title}"
-							mode="LineMode" press="externalLinkWhatIsCrypto" />
-						<GenericTile header="{i18n>startpageLineTile2Title}"
-							mode="LineMode" press="externalLinkExchanges" />
-					</layout:HorizontalLayout>
-				</FlexBox>
-
 
 			</layout:VerticalLayout>
 		</FlexBox>
-		
+		<FlexBox width="auto" height="auto" class="sapUiTinyMarginBegin"
+			justifyContent="Start">
+			<layout:HorizontalLayout allowWrapping="true">
+				<GenericTile header="{i18n>startpageLineTile1Title}"
+					mode="LineMode" press="externalLinkWhatIsCrypto" />
+				<GenericTile header="{i18n>startpageLineTile2Title}"
+					mode="LineMode" press="externalLinkExchanges" />
+			</layout:HorizontalLayout>
+		</FlexBox>
 	</Page>
 
 </mvc:View>

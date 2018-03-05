@@ -1,0 +1,131 @@
+<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Startpage"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart">
+	<Page showHeader="false" backgroundDesign="Info">
+		<!-- <subHeader class="subHeaderDesign"> -->
+		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<!-- </subHeader> -->
+		<FlexBox width="auto" height="auto" justifyContent="Center"
+			backgroundDesign="Translucent">
+			<layout:VerticalLayout class="sapUiResponsiveMargin">
+				<Title titleStyle="H2" text="{i18n>startpageCurrencyTitle}" />
+				<FlexBox width="auto" height="38rem">
+					<layout:HorizontalLayout allowWrapping="true">
+						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+							header="{i18n>startpageCurrencyTitle}" press="">
+							<tileContent>
+								<TileContent>
+									<content>
+										<NumericContent scale="%"
+											value="{
+									path: 'process>/Nodes',
+									formatter: '.getProgress'
+								}"
+											icon="sap-icon://collections-insight" />
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+							header="{i18n>startpagePFTileTitle}" press="onNavToProcessFlow">
+							<tileContent>
+								<TileContent>
+									<content>
+										<NumericContent scale="%"
+											value="{
+									path: 'process>/Nodes',
+									formatter: '.getProgress'
+								}"
+											icon="sap-icon://factory" />
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+
+						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+							header="{
+					parts: [
+						'i18n>startpageCCTileTitle',
+						'business>/year',
+						'business>/currency'
+					],
+					formatter: 'jQuery.sap.formatMessage'
+				}">
+							<tileContent>
+								<TileContent>
+									<content>
+										<microchart:BulletMicroChart
+											targetValue="{business>/plannedExpenses}"
+											targetValueLabel="{
+									path: 'business>/plannedExpenses',
+									formatter: '.formatNumber'
+								}"
+											actualValueLabel="{
+									path: 'business>/expenses',
+									formatter: '.formatNumber'
+								}"
+											minValue="0">
+											<microchart:actual>
+												<microchart:BulletMicroChartData
+													value="{business>/expenses}" color="Critical" />
+											</microchart:actual>
+											<microchart:thresholds>
+												<microchart:BulletMicroChartData
+													value="{business>/expensesCritical}" color="Critical" />
+												<microchart:BulletMicroChartData
+													value="{business>/budget}" color="Error" />
+											</microchart:thresholds>
+										</microchart:BulletMicroChart>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+
+						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+							header="{i18n>startpageUserReviewsTileTitle}" press="onNavToReviews">
+							<tileContent>
+								<TileContent>
+									<content>
+										<NumericContent
+											value="{
+									path: 'reviews>/UserReviews',
+									formatter: '.getEntityCount'
+								}"
+											indicator="None" valueColor="Neutral" icon="sap-icon://favorite" />
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+
+						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+							header="{i18n>startpageTestResultsTileTitle}" subheader="{i18n>startpageTestResultsTileSubTitle}"
+							press="onNavToChartContainer">
+							<tileContent>
+								<TileContent>
+									<content>
+										<ImageContent src="sap-icon://business-objects-experience" />
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+
+
+					</layout:HorizontalLayout>
+				</FlexBox>
+
+
+
+			</layout:VerticalLayout>
+		</FlexBox>
+		<FlexBox width="auto" height="auto" class="sapUiTinyMarginBegin"
+			justifyContent="Start">
+			<layout:HorizontalLayout allowWrapping="true">
+				<GenericTile header="{i18n>startpageLineTile1Title}"
+					mode="LineMode" press="externalLinkWhatIsCrypto" />
+				<GenericTile header="{i18n>startpageLineTile2Title}"
+					mode="LineMode" press="externalLinkExchanges" />
+			</layout:HorizontalLayout>
+		</FlexBox>
+	</Page>
+
+</mvc:View>

@@ -76,8 +76,8 @@ sap.ui.define([
 		externalLink: function(){
 			window.open("https://stackoverflow.com/questions/18402522/button-action-to-navigate-another-url-link-in-sapui5","_blank");
 		},
-		mitCrule: function(){
-			//TIMEA	
+		onNavToCurrency: function(){
+			this.getRouter().navTo("currency");
 		}
 	});
 });
