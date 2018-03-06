@@ -6,10 +6,9 @@
 	xmlns:suite="sap.suite.ui.commons"
 	controllerName="sap.suite.ui.commons.PrjTest.controller.ChartContainer">
 	<Page
-		title="{i18n>chartContainerPageTitle}"
-		showNavButton="true"
-		navButtonPress="onNavButtonPressed"
+		showHeader="false"
 		backgroundDesign="Solid">
+		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 		<content>
 			<l:Grid defaultSpan="L12 M12 S12"
 				class="sapUiResponsiveMargin"

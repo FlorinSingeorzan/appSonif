@@ -1,0 +1,20 @@
+.homeButton .sapMBtnInner.sapMBtnEmphasized.sapMBtnHoverable{
+	border-radius: 0px 0px;
+	background-color: #595959;
+	border-color: #4d4d4d;
+	-webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+.homeButtonH:hover .sapMBtnInner.sapMBtnEmphasized.sapMBtnHoverable{
+	background-color: #4d4d4d;
+	border-color: #4d4d4d;
+	
+} 
+
+not working
+.subHeaderDesign .sapMTB{		
+	background: #c6060696;
+	color : #c6060696;
+	background-color: #c6060696;
+	
+}
