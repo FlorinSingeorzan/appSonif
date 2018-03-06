@@ -112,9 +112,6 @@
 
 					</layout:HorizontalLayout>
 				</FlexBox>
-
-
-
 			</layout:VerticalLayout>
 		</FlexBox>
 		<FlexBox width="auto" height="auto" class="sapUiTinyMarginBegin"
