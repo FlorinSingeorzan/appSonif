@@ -6,8 +6,11 @@ sap.ui.define([
 ], function(Controller, MessageToast, JSONModel, NumberFormat) {    //tine cont de ordinea de sus
 	"use strict";
 
-	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.NewsFeed", {
-		onInit: function() {
+	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.Currency", {
+		onInit: function() {  
+			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/CryptocurrencyData.json");
+			var oModel = new JSONModel(sDataPath);
+			this.getView().setModel(oModel, "cryptocurrencyData");
 		},
 		onNavButtonPressed: function() {
 			var oRouter = this.getOwnerComponent().getRouter();

@@ -79,6 +79,10 @@
 			"reviews": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/data/Reviews.json"
+			},
+			"cryptocurrencyData": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/data/CryptocurrencyData.json"
 			}
 		},
 		"resources": {
