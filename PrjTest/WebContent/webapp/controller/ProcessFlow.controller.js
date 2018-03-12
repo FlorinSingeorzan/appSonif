@@ -1,26 +1,51 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/m/MessageToast"
-], function(Controller, MessageToast) {
+	"sap/ui/model/json/JSONModel",
+   	"sap/ui/vk/ContentResource",
+   	"sap/ui/vk/ContentConnector",
+	 "sap/ui/vk/dvl/ViewStateManager"
+], function(Controller, JSONModel, ContentResource, ContentConnector, ViewStateManager) {
 	"use strict";
+	
+	var contentResource = new sap.ui.vk.ContentResource({
+		//specifying the resource to load
+		source: "model/boxTestModel.vds",
+		sourceType: "vds",
+		id: "abc123"
+	});
 
 	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.ProcessFlow", {
 
 		onNavButtonPressed: function() {
 			this.getOwnerComponent().getRouter().navTo("home");
 		},
+		
+		onInit: function () {
+			var view = this.getView();
+			var oViewport = view.byId("viewport");
+			
+	
+			var contentResource = new sap.ui.vk.ContentResource({
+				source: "model/boxTestModel.vds",
+				sourceType: "vds",
+				sourceId: "abc123"
+			});
+			//Constructor for a new content connector
+			var contentConnector = new ContentConnector("abcd");
 
-		getValuesDelta: function(fFirstValue, fSecondValue) {
-			return fSecondValue - fFirstValue;
-		},
+			//Manages the visibility and the selection states of nodes in the scene.
+			var viewStateManager = new ViewStateManager("vsmA", {
+				contentConnector: contentConnector
+			});
+		
+			//set content connector and viewStateManager for viewport
+			oViewport.setContentConnector(contentConnector);
+			oViewport.setViewStateManager(viewStateManager);
+			
+			view.addDependent(contentConnector).addDependent(viewStateManager);
 
-		onNodePressed: function(oEvent) {
-			var sItemTitle = oEvent.getParameters().getTitle();
-			MessageToast.show(this.getResourceBundle().getText("processFlowNodeClickedMessage", [sItemTitle]));
-		},
-
-		getResourceBundle: function() {
-			return this.getOwnerComponent().getModel("i18n").getResourceBundle();
-		}
+			//Add resource to load to content connector
+			contentConnector.addContentResource(contentResource);
+			}
+		});
 	});
-});
