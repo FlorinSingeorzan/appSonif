@@ -45,12 +45,24 @@
 		"dependencies": {
 			"minUI5Version": "1.50.0",
 			"libs": {
-				"sap.ui.core": {},
-				"sap.m": {},
-				"sap.ui.layout": {},
-				"sap.ui.commons": {},
-				"sap.suite.ui.commons": {},
-				"sap.suite.ui.microchart": {}
+				"sap.ui.core": {
+					
+				},
+				"sap.m": {
+					
+				},
+				"sap.ui.layout": {
+					
+				},
+				"sap.ui.commons": {
+					
+				},
+				"sap.suite.ui.commons": {
+					
+				},
+				"sap.suite.ui.microchart": {
+					
+				}
 			}
 		},
 		"contentDensities": {
@@ -86,11 +98,11 @@
 			}
 		},
 		"resources": {
-		  "css": [
-			{
-			  "uri": "css/style.css"
-			}
-		  ]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -100,22 +112,25 @@
 				"controlId": "PrjTestApp",
 				"controlAggregation": "pages",
 				"transition": "fade",
+				"async": true,
 				"bypassed": {
 					"target": [
 						"startpage"
 					]
 				}
-			}, 
+			},
 			"routes": [
 				{
 					"pattern": "",
 					"name": "home",
 					"target": "startpage"
-				}, {
+				},
+				{
 					"pattern": "processFlow",
 					"name": "processFlow",
 					"target": "processFlow"
-				}, {
+				},
+				{
 					"pattern": "chartContainer",
 					"name": "chartContainer",
 					"target": "chartContainer"
@@ -134,6 +149,11 @@
 					"pattern": "currency",
 					"name": "currency",
 					"target": "currency"
+				},
+				{
+					"pattern": "detail/{currencyPath}",
+					"name": "detail",
+					"target": "detail"
 				}
 			],
 			"targets": {
@@ -160,6 +180,11 @@
 				"currency": {
 					"viewName": "Currency",
 					"viewLevel": 1
+				},
+				"detail": {
+					"viewId": "detail",
+					"viewName": "Detail",
+					"viewLevel": 3
 				}
 			}
 		}

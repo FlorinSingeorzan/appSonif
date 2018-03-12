@@ -25,10 +25,11 @@
 									<TileContent
 										footer="{
 												path: 'news>date',
-												formatter: '.formatJSONDate'
+												formatter: '.formatJSONDate',
+												templateShareable:true
 												}">
 										<content>
-											<NewsContent contentText="{news>content}"
+											<NewsContent templateShareable="true" contentText="{news>content}"
 												subheader="{news>source}">
 											</NewsContent>
 										</content>

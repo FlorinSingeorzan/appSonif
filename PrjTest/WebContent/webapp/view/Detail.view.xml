@@ -1,0 +1,11 @@
+<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Detail"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart"
+	height="100%" displayBlock="true" xmlns:suite="sap.suite.ui.commons">
+
+	<Page>
+		<ObjectHeader
+			intro="{cryptocurrencyData>name}"
+			title="{cryptocurrencyData>curentPrice"/>
+	</Page>
+</mvc:View>

@@ -12,9 +12,13 @@ sap.ui.define([
 			var oModel = new JSONModel(sDataPath);
 			this.getView().setModel(oModel, "cryptocurrencyData");
 		},
-		onNavButtonPressed: function() {
-			var oRouter = this.getOwnerComponent().getRouter();
-			oRouter.navTo("home");
+		ontest: function(oEvent) {
+			MessageToast.show("Hello World");
+			var oItem = oEvent.getSource();
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("detail", {
+				currencyPath: oItem.getBindingContext("cryptocurrencyData").getPath().substr(1)
+			});
 		}
 	});
 });  
