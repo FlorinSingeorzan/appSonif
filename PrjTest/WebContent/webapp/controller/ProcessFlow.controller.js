@@ -1,19 +1,11 @@
 sap.ui.define([
+	"jquery.sap.global",
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/model/json/JSONModel",
-   	"sap/ui/vk/ContentResource",
-   	"sap/ui/vk/ContentConnector",
-	 "sap/ui/vk/dvl/ViewStateManager"
-], function(Controller, JSONModel, ContentResource, ContentConnector, ViewStateManager) {
+	"sap/m/MessageToast"
+], function(jQuery, Controller, JSONModel, MessageToast) {
 	"use strict";
 	
-	var contentResource = new sap.ui.vk.ContentResource({
-		//specifying the resource to load
-		source: "model/boxTestModel.vds",
-		sourceType: "vds",
-		id: "abc123"
-	});
-
 	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.ProcessFlow", {
 
 		onNavButtonPressed: function() {
@@ -21,31 +13,42 @@ sap.ui.define([
 		},
 		
 		onInit: function () {
-			var view = this.getView();
-			var oViewport = view.byId("viewport");
-			
-	
-			var contentResource = new sap.ui.vk.ContentResource({
-				source: "model/boxTestModel.vds",
-				sourceType: "vds",
-				sourceId: "abc123"
-			});
-			//Constructor for a new content connector
-			var contentConnector = new ContentConnector("abcd");
+			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/ProcessFlowData.json");
+			var oModel = new JSONModel(sDataPath);
+			this.getView().setModel(oModel);
 
-			//Manages the visibility and the selection states of nodes in the scene.
-			var viewStateManager = new ViewStateManager("vsmA", {
-				contentConnector: contentConnector
-			});
-		
-			//set content connector and viewStateManager for viewport
-			oViewport.setContentConnector(contentConnector);
-			oViewport.setViewStateManager(viewStateManager);
-			
-			view.addDependent(contentConnector).addDependent(viewStateManager);
+			this.oProcessFlow = this.getView().byId("processflow");
+			this.oProcessFlow.updateModel();
+		},
 
-			//Add resource to load to content connector
-			contentConnector.addContentResource(contentResource);
+		onZoomIn: function () {
+			this.oProcessFlow.zoomIn();
+
+			MessageToast.show("Zoom level changed to: " + this.oProcessFlow.getZoomLevel());
+		},
+
+		onZoomOut: function () {
+			this.oProcessFlow.zoomOut();
+
+			MessageToast.show("Zoom level changed to: " + this.oProcessFlow.getZoomLevel());
+		},
+
+		onNodePress: function(oEvent) {
+			var oNode = oEvent.getParameters();
+			var sPath = oNode.getBindingContext().getPath() + "/quickView";
+
+			if (!this.oQuickView) {
+				this.oQuickView = sap.ui.xmlfragment("sap.suite.ui.commons.PrjTest.fragment.QuickView", this);
+				this.getView().addDependent(this.oQuickView);
 			}
+			this.oQuickView.bindElement(sPath);
+			this.oQuickView.openBy(oNode);
+		},
+
+		onExit: function () {
+			if (this.oQuickView) {
+				this.oQuickView.destroy();
+			}
+		}
 		});
 	});

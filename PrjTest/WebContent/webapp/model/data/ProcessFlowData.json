@@ -1,234 +1,237 @@
 {
-	"Nodes": [
+	"nodes": [
 		{
 			"id": "1",
 			"lane": "0",
-			"title": "Raw material: From stock",
-			"titleAbbreviation": "RMS",
-			"children": [
-				10,
-				11
-			],
-			"isTitleClickable": true,
-			"state": "Positive",
-			"stateText": "Delivered",
-			"texts": [ "Raw material from stock" ]
-		}, {
+			"title": "John Li",
+			"children": [ 2, 3 ],
+			"focused": true,
+			"texts": "Account Manager",
+			"src": "images/ProcessFlowImageContent/1.jpg",
+			"quickView": {
+				"pageId": "employeePageId",
+				"header": "Employee Info",
+				"icon": "images/ProcessFlowImageContent/1.jpg",
+				"title": "John Li",
+				"description": "Account Manager",
+				"groups": [
+					{
+						"heading": "Contact Details",
+						"elements": [
+							{
+								"label": "Mobile",
+								"value": "+001 6101 34869-0",
+								"elementType": "mobile"
+							},
+							{
+								"label": "Phone",
+								"value": "+001 6101 34869-1",
+								"elementType": "phone"
+							},
+							{
+								"label": "Email",
+								"value": "john_li@example.com",
+								"emailSubject" : "Subject",
+								"elementType": "email"
+							}
+						]
+					},
+					{
+						"heading": "Company",
+						"elements": [
+							{
+								"label": "Name",
+								"value": "Company A",
+								"url": "http://sap.com",
+								"elementType": "link"
+							},
+							{
+								"label": "Address",
+								"value": "481 West Street, Anytown OH, 45066, USA"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
 			"id": "2",
-			"lane": "0",
-			"title": "Raw material: Purchased",
-			"titleAbbreviation": "RMP",
-			"children": [
-				10,
-				11
-			],
-			"isTitleClickable": true,
-			"state": "Positive",
-			"stateText": "Delivered",
-			"texts": [ "Raw material from purchase" ]
-		}, {
+			"lane": "1",
+			"title": "John Miller",
+			"children": [ ],
+			"texts": "Account Manager",
+			"src": "images/ProcessFlowImageContent/2.jpg",
+			"quickView": {
+				"pageId": "employeePageId",
+				"header": "Employee Info",
+				"icon": "images/ProcessFlowImageContent/2.jpg",
+				"title": "John Miller",
+				"description": "Account Manager",
+				"groups": [
+					{
+						"heading": "Contact Details",
+						"elements": [
+							{
+								"label": "Mobile",
+								"value": "+1 202 555 5555",
+								"elementType": "mobile"
+							},
+							{
+								"label": "Phone",
+								"value": "+1 330 555 5555",
+								"elementType": "phone"
+							},
+							{
+								"label": "Email",
+								"value": "john_miller@example.com",
+								"emailSubject" : "Subject",
+								"elementType": "email"
+							}
+						]
+					},
+					{
+						"heading": "Company",
+						"elements": [
+							{
+								"label": "Name",
+								"value": "Company A",
+								"url": "http://sap.com",
+								"elementType": "link"
+							},
+							{
+								"label": "Address",
+								"value": "481 West Street, Anytown OH, 45066, USA"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
 			"id": "3",
-			"lane": "0",
-			"title": "Spare parts: Purchased",
-			"titleAbbreviation": "SPP",
-			"children": [ 41 ],
-			"isTitleClickable": true,
-			"state": "Negative",
-			"stateText": "Not delivered",
-			"focused": true,
-			"texts": [ "Spare parts for ice dispenser" ]
-		}, {
-			"id": "10",
 			"lane": "1",
-			"title": "Manufacturing: Freezer",
-			"titleAbbreviation": "MAF",
-			"children": [ 20 ],
-			"state": "Positive",
-			"stateText": "Finished",
-			"texts": [
-				"Vaporizer",
-				"Compressor"
-			]
-		}, {
-			"id": "11",
-			"lane": "1",
-			"title": "Manufacturing: Electronic parts",
-			"titleAbbreviation": "MAE",
-			"children": [ 20 ],
-			"state": "Positive",
-			"stateText": "Finished",
-			"texts": [
-				"Control unit",
-				"Cabling"
-			]
-		}, {
-			"id": "12",
-			"lane": "1",
-			"title": "Manufacturing: Case",
-			"titleAbbreviation": "MAC",
-			"children": [ 21 ],
-			"state": "Positive",
-			"stateText": "Finished",
-			"texts": [
-				"Case",
-				"Mechanical parts"
-			]
-		}, {
-			"id": "13",
-			"lane": "1",
-			"title": "Manufacturing: Ice dispenser",
-			"titleAbbreviation": "MAID",
-			"children": [ 21 ],
-			"state": "Negative",
-			"stateText": "Not finished",
-			"texts": []
-		}, {
-			"id": "20",
+			"title": "Li Qin",
+			"children": [ 4 ],
+			"texts": "Manager",
+			"src": "images/ProcessFlowImageContent/3.jpg",
+			"quickView": {
+				"pageId": "employeePageId",
+				"header": "Employee Info",
+				"icon": "images/ProcessFlowImageContent/3.jpg",
+				"title": "Li Qin",
+				"description": "Manager",
+				"groups": [
+					{
+						"heading": "Contact Details",
+						"elements": [
+							{
+								"label": "Mobile",
+								"value": "+1 605 555 5555",
+								"elementType": "mobile"
+							},
+							{
+								"label": "Phone",
+								"value": "+1 316 555 5555",
+								"elementType": "phone"
+							},
+							{
+								"label": "Email",
+								"value": "li_qin@example.com",
+								"emailSubject" : "Subject",
+								"elementType": "email"
+							}
+						]
+					},
+					{
+						"heading": "Company",
+						"elements": [
+							{
+								"label": "Name",
+								"value": "Company A",
+								"url": "http://sap.com",
+								"elementType": "link"
+							},
+							{
+								"label": "Address",
+								"value": "481 West Street, Anytown OH, 45066, USA"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "4",
 			"lane": "2",
-			"title": "Assembly: Main unit",
-			"titleAbbreviation": "AMU",
-			"children": [ 22 ],
-			"state": "Positive",
-			"stateText": "Finished",
-			"texts": [
-				"Freezer",
-				"Electronic parts"
-			]
-		}, {
-			"id": "21",
-			"lane": "2",
-			"title": "Assembly: Case with dispenser",
-			"titleAbbreviation": "ASP",
-			"children": [ 22 ],
-			"state": "Critical",
-			"stateText": "At risk",
-			"texts": [
-				"Assembly ice dispenser",
-				"with the case"
-			]
-		}, {
-			"id": "22",
-			"lane": "2",
-			"title": "Assembly: Final",
-			"titleAbbreviation": "ASF",
-			"children": [ 41 ],
-			"state": "Critical",
-			"stateText": "At risk",
-			"texts": []
-		}, {
-			"id": "30",
-			"lane": "3",
-			"title": "Marketing campaign",
-			"titleAbbreviation": "MC",
-			"children": [ 41 ],
-			"state": "Positive",
-			"stateText": "Done",
-			"texts": []
-		}, {
-			"id": "31",
-			"lane": "3",
-			"title": "Campaign evaluation",
-			"titleAbbreviation": "CE",
-			"children": [ 41 ],
-			"state": "Neutral",
-			"stateText": "Pending",
-			"texts": [ "Results not completed" ]
-		}, {
-			"id": "41",
-			"lane": "4",
-			"title": "Delivery",
-			"titleAbbreviation": "DEL",
-			"focused": true,
-			"children": [ 51 ],
-			"state": "Critical",
-			"stateText": "At risk",
-			"texts": []
-		}, {
-			"id": "51",
-			"lane": "5",
-			"title": "Invoice",
-			"titleAbbreviation": "INV",
-			"children": null,
-			"state": "Planned",
-			"texts": []
+			"title": "Bodo Jung",
+			"children": [ ],
+			"texts": "Manager",
+			"src": "images/ProcessFlowImageContent/4.jpg",
+			"quickView": {
+				"pageId": "employeePageId",
+				"header": "Employee Info",
+				"icon": "images/ProcessFlowImageContent/4.jpg",
+				"title": "Bodo Jung",
+				"description": "Manager",
+				"groups": [
+					{
+						"heading": "Contact Details",
+						"elements": [
+							{
+								"label": "Mobile",
+								"value": "+001 6101 34869-0",
+								"elementType": "mobile"
+							},
+							{
+								"label": "Phone",
+								"value": "+001 6101 34869-1",
+								"elementType": "phone"
+							},
+							{
+								"label": "Email",
+								"value": "bodo_jung@example.com",
+								"emailSubject" : "Subject",
+								"elementType": "email"
+							}
+						]
+					},
+					{
+						"heading": "Company",
+						"elements": [
+							{
+								"label": "Name",
+								"value": "Company A",
+								"url": "http://sap.com",
+								"elementType": "link"
+							},
+							{
+								"label": "Address",
+								"value": "481 West Street, Anytown OH, 45066, USA"
+							}
+						]
+					}
+				]
+			}
 		}
 	],
-	"Lanes": [
+	"lanes": [
 		{
 			"id": "0",
-			"icon": "sap-icon://begin",
-			"label": "Begin->User:",
-			"position": 0
-		}, {
+			"position": 0,
+			"icon": "sap-icon://employee",
+			"text": "Level 1"
+		},
+		{
 			"id": "1",
-			"icon": "sap-icon://account",
-			"label": "Rob opens his bitcoin wallet",
-			"position": 1
-		}, {
+			"position": 1,
+			"icon": "sap-icon://employee",
+			"text": "Level 2"
+		},
+		{
 			"id": "2",
-			"icon": "sap-icon://bar-code",
-			"label": "scans/copy Laura's address",
-			"position": 2
-		}, {
-			"id": "3",
-			"icon": "sap-icon://lead",
-			"label": "fills the amount and the fee",
-			"position": 3
-		}, {
-			"id": "4",
-			"icon": "sap-icon://payment-approval",
-			"label": "and sends!",
-			"position": 4
-		}, {
-			"id": "5",
-			"icon": "sap-icon://machine",
-			"label": "Machine:",
-			"position": 5
-		}, {
-			"id": "6",
-			"icon": "sap-icon://private",
-			"label": "The wallet signs the transaction using Rob's private key",
-			"position": 6
-		}, {
-			"id": "7",
-			"icon": "sap-icon://pending",
-			"label": "The transaction is propagated and validated by the network nodes",
-			"position": 7
-		}, {
-			"id": "8",
-			"icon": "sap-icon://inventory",
-			"label": "Miners include the transaction in the next block to be mined",
-			"position": 8
-		}, {
-			"id": "9",
-			"icon": "sap-icon://globe",
-			"label": "Mining time!",
-			"position": 9
-		}, {
-			"id": "10",
-			"icon": "sap-icon://collections-insight",
-			"label": "The miner who solves the Proof of Work propagates the new block to the network",
-			"position": 10
-		}, {
-			"id": "11",
-			"icon": "sap-icon://it-system",
-			"label": "The nodes verify the result and propagate the block",
-			"position": 11
-		}, {
-			"id": "12",
-			"icon": "sap-icon://accept",
-			"label": "Laura sees the first confirmation",
-			"position": 12
-		}, {
-			"id": "13",
-			"icon": "sap-icon://bbyd-active-sales",
-			"label": "New confirmations appear with each new block that is created",
-			"position": 13
-		}, {
-			"id": "14",
-			"icon": "sap-icon://alert",
-			"label": "The end!",
-			"position": 14
+			"position": 2,
+			"icon": "sap-icon://employee",
+			"text": "Level 3"
 		}
 	]
 }
