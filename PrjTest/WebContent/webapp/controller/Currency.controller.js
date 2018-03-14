@@ -13,9 +13,9 @@ sap.ui.define([
 			this.getView().setModel(oModel, "cryptocurrencyData");
 		},
 		ontest: function(oEvent) {
-			MessageToast.show("Hello World");
 			var oItem = oEvent.getSource();
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			MessageToast.show(oItem.getBindingContext("cryptocurrencyData").getPath().substr(1));
 			oRouter.navTo("detail", {
 				currencyPath: oItem.getBindingContext("cryptocurrencyData").getPath().substr(1)
 			});
