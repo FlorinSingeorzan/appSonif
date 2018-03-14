@@ -6,8 +6,8 @@
 	xmlns:suite="sap.suite.ui.commons"
 	controllerName="sap.suite.ui.commons.PrjTest.controller.ChartContainer">
 	<Page
-		showHeader="false"
-		backgroundDesign="Solid">
+		backgroundDesign="Solid"
+		showHeader="false">
 		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 		<content>
 			<l:Grid defaultSpan="L12 M12 S12"
@@ -31,7 +31,7 @@
 								type="JS" />
 						</suite:content>
 					</suite:ChartContainerContent>
-					<suite:ChartContainerContent
+					<suite:ChartContainerContent 
 						icon="sap-icon://appointment-2"
 						title="{i18n>chartContainerBulletChartContentTitle6months}">
 						<suite:content>
