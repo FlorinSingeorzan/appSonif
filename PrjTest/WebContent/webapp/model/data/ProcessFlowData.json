@@ -3,17 +3,14 @@
 		{
 			"id": "1",
 			"lane": "0",
-			"title": "John Li",
+			"title": "Pasul 1",
 			"children": [ 2, 3 ],
 			"focused": true,
-			"texts": "Account Manager",
 			"src": "images/ProcessFlowImageContent/1.jpg",
 			"quickView": {
 				"pageId": "employeePageId",
-				"header": "Employee Info",
+				"header": "Pasl 1 Info",
 				"icon": "images/ProcessFlowImageContent/1.jpg",
-				"title": "John Li",
-				"description": "Account Manager",
 				"groups": [
 					{
 						"heading": "Contact Details",
@@ -57,16 +54,13 @@
 		{
 			"id": "2",
 			"lane": "1",
-			"title": "John Miller",
+			"title": "Pasul 2",
 			"children": [ ],
-			"texts": "Account Manager",
 			"src": "images/ProcessFlowImageContent/2.jpg",
 			"quickView": {
 				"pageId": "employeePageId",
-				"header": "Employee Info",
+				"header": "Pasul 2 Info",
 				"icon": "images/ProcessFlowImageContent/2.jpg",
-				"title": "John Miller",
-				"description": "Account Manager",
 				"groups": [
 					{
 						"heading": "Contact Details",
@@ -110,16 +104,13 @@
 		{
 			"id": "3",
 			"lane": "1",
-			"title": "Li Qin",
+			"title": "Pasul 3",
 			"children": [ 4 ],
-			"texts": "Manager",
 			"src": "images/ProcessFlowImageContent/3.jpg",
 			"quickView": {
 				"pageId": "employeePageId",
-				"header": "Employee Info",
+				"header": "Pasul 3 Info",
 				"icon": "images/ProcessFlowImageContent/3.jpg",
-				"title": "Li Qin",
-				"description": "Manager",
 				"groups": [
 					{
 						"heading": "Contact Details",
@@ -163,16 +154,13 @@
 		{
 			"id": "4",
 			"lane": "2",
-			"title": "Bodo Jung",
+			"title": "Pasul 4",
 			"children": [ ],
-			"texts": "Manager",
 			"src": "images/ProcessFlowImageContent/4.jpg",
 			"quickView": {
 				"pageId": "employeePageId",
-				"header": "Employee Info",
+				"header": "Pasul 4 Info",
 				"icon": "images/ProcessFlowImageContent/4.jpg",
-				"title": "Bodo Jung",
-				"description": "Manager",
 				"groups": [
 					{
 						"heading": "Contact Details",
