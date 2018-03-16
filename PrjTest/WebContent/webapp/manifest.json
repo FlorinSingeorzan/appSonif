@@ -151,9 +151,9 @@
 					"target": "currency"
 				},
 				{
-					"pattern": "detail/{currencyPath}",
-					"name": "detail",
-					"target": "detail"
+					"pattern": "currency/{currencyId}",
+					"name": "vcoin",
+					"target": "vcoin"
 				}
 			],
 			"targets": {
@@ -177,14 +177,14 @@
 					"viewName": "NewsFeed",
 					"viewLevel": 1
 				},
-				"currency": {
+				"currency": { 
 					"viewName": "Currency",
 					"viewLevel": 1
 				},
-				"detail": {
-					"viewId": "detail",
+				"vcoin": {
+					"viewId": "vcoin",
 					"viewName": "Detail",
-					"viewLevel": 3
+					"viewLevel": 2
 				}
 			}
 		}

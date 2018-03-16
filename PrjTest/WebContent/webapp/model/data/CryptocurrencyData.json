@@ -1,6 +1,7 @@
 {
 	"CryptocurrencyData": [
-		{
+		{	
+			"currencyId": 0,
 			"name": "Bitcoin",
 			"symbol": "BTC",
 			"marketCapital": "$185.627.244.152",
@@ -25,6 +26,7 @@
 			"currentDate": "7 Mar "
 		},
 		{
+			"currencyId": 1,
 			"name": "Ethereum",
 			"symbol": "ETH",
 			"marketCapital": "$77.827.244.152",
@@ -49,6 +51,7 @@
 			"currentDate": "7 Mar "
 		},
 		{
+			"currencyId": 2,
 			"name": "Ripple",
 			"symbol": "XRP",
 			"marketCapital": "$35.760.244.152",
@@ -73,6 +76,7 @@
 			"currentDate": "7 Mar "
 		},
 		{
+			"currencyId": 3,
 			"name": "Monero",
 			"symbol": "XMR",
 			"marketCapital": "$5.487.244.152",
@@ -97,6 +101,7 @@
 			"currentDate": "7 Mar "
 		},
 		{
+			"currencyId": 4,
 			"name": "Tron",
 			"symbol": "TRX",
 			"marketCapital": "$2.817.244.182",
@@ -121,6 +126,7 @@
 			"currentDate": "7 Mar "
 		},
 		{
+			"currencyId": 5,
 			"name": "Waltonchain",
 			"symbol": "WTC",
 			"marketCapital": "566.994.182",
@@ -145,6 +151,7 @@
 			"currentDate": "7 Mar "
 		},
 		{
+			"currencyId": 6,
 			"name": "IOTA",
 			"symbol": "MIOTA",
 			"marketCapital": "$4.657.274.459",
