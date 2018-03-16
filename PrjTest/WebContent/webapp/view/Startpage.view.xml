@@ -1,116 +1,113 @@
 <mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Startpage"
-	xmlns:mvc="sap.ui.core.mvc" 
-	xmlns="sap.m" xmlns:core="sap.ui.core"
-	xmlns:layout="sap.ui.layout" 
-	xmlns:microchart="sap.suite.ui.microchart">
-	<Page showHeader="false" backgroundDesign="Info">
-	<!-- <subHeader class="subHeaderDesign"> -->
-	<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
-	<!-- </subHeader> -->
-	<FlexBox width="auto" 
-			height="auto" 
-			justifyContent="Center"
-			backgroundDesign="Translucent">
-			<layout:VerticalLayout class="sapUiResponsiveMargin">
-				<Title titleStyle="H2" 
-					text="{i18n>startpageTilesGroupTitle}" />
-				<FlexBox width="auto" 
-					height="38rem">
-					<layout:HorizontalLayout allowWrapping="true">
-						<SlideTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
-							tiles="{news>/News}">
-							<GenericTile backgroundImage="{news>image}"
-								state="{news>state}" frameType="TwoByOne" press="onNavToNewsFeed">
-								<tileContent>
-									<TileContent
-										footer="{
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart">
+	<Shell showLogout="false">
+		<app>
+			<Page showHeader="false" backgroundDesign="Info">
+				<!-- <subHeader class="subHeaderDesign"> -->
+				<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+				<!-- </subHeader> -->
+				<FlexBox width="auto" height="auto" justifyContent="Center"
+					backgroundDesign="Translucent">
+					<layout:VerticalLayout class="sapUiResponsiveMargin">
+						<Title titleStyle="H2" text="{i18n>startpageTilesGroupTitle}" />
+						<FlexBox width="auto" height="38rem">
+							<layout:HorizontalLayout allowWrapping="true">
+								<SlideTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+									tiles="{news>/News}">
+									<GenericTile backgroundImage="{news>image}" state="{news>state}"
+										frameType="TwoByOne" press="onNavToNewsFeed">
+										<tileContent>
+											<TileContent
+												footer="{
 												path: 'news>date',
 												formatter: '.formatJSONDate',
 												templateShareable:true
 												}">
-										<content>
-											<NewsContent templateShareable="true" contentText="{news>content}"
-												subheader="{news>source}">
-											</NewsContent>
-										</content>
-									</TileContent>
-								</tileContent>
-							</GenericTile>
-						</SlideTile>
-						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
-							header="{i18n>startpageCurrencyTitle}" press="onNavToCurrency">
-							<tileContent>
-								<TileContent>
-									<content>
-										<NumericContent scale="%"
-											value="{
+												<content>
+													<NewsContent templateShareable="true"
+														contentText="{news>content}" subheader="{news>source}">
+													</NewsContent>
+												</content>
+											</TileContent>
+										</tileContent>
+									</GenericTile>
+								</SlideTile>
+								<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+									header="{i18n>startpageCurrencyTitle}" press="onNavToCurrency">
+									<tileContent>
+										<TileContent>
+											<content>
+												<NumericContent scale="%"
+													value="{
 													path: 'process>/Nodes',
 													formatter: '.getProgress'
 												}"
-											icon="sap-icon://collections-insight" />
-									</content>
-								</TileContent>
-							</tileContent>
-						</GenericTile>
-						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
-							header="{i18n>startpagePFTileTitle}" press="onNavToProcessFlow">
-							<tileContent>
-								<TileContent>
-									<content>
-										<NumericContent scale="%"
-											value="{
+													icon="sap-icon://collections-insight" />
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+									header="{i18n>startpagePFTileTitle}" press="onNavToProcessFlow">
+									<tileContent>
+										<TileContent>
+											<content>
+												<NumericContent scale="%"
+													value="{
 													path: 'process>/Nodes',
 													formatter: '.getProgress'
 												}"
-											icon="sap-icon://factory" />
-									</content>
-								</TileContent>
-							</tileContent>
-						</GenericTile>
+													icon="sap-icon://factory" />
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
 
-						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
-							header="{i18n>startpageUserReviewsTileTitle}" press="onNavToReviews">
-							<tileContent>
-								<TileContent>
-									<content>
-										<NumericContent
-											value="{
+								<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+									header="{i18n>startpageUserReviewsTileTitle}" press="onNavToReviews">
+									<tileContent>
+										<TileContent>
+											<content>
+												<NumericContent
+													value="{
 									path: 'reviews>/UserReviews',
 									formatter: '.getEntityCount'
 								}"
-											indicator="None" valueColor="Neutral" icon="sap-icon://favorite" />
-									</content>
-								</TileContent>
-							</tileContent>
-						</GenericTile>
+													indicator="None" valueColor="Neutral" icon="sap-icon://favorite" />
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
 
-						<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
-							header="{i18n>startpageTestResultsTileTitle}" subheader="{i18n>startpageTestResultsTileSubTitle}"
-							press="onNavToChartContainer">
-							<tileContent>
-								<TileContent>
-									<content>
-										<ImageContent src="sap-icon://business-objects-experience" />
-									</content>
-								</TileContent>
-							</tileContent>
-						</GenericTile>
+								<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
+									header="{i18n>startpageTestResultsTileTitle}" subheader="{i18n>startpageTestResultsTileSubTitle}"
+									press="onNavToChartContainer">
+									<tileContent>
+										<TileContent>
+											<content>
+												<ImageContent src="sap-icon://business-objects-experience" />
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
 
 
+							</layout:HorizontalLayout>
+						</FlexBox>
+
+					</layout:VerticalLayout>
+				</FlexBox>
+				<FlexBox width="auto" height="auto" class="sapUiTinyMarginBegin"
+					justifyContent="Start">
+					<layout:HorizontalLayout allowWrapping="true">
+						<GenericTile header="{i18n>startpageLineTile1Title}"
+							mode="LineMode" press="externalLinkWhatIsCrypto" />
+						<GenericTile header="{i18n>startpageLineTile2Title}"
+							mode="LineMode" press="externalLinkExchanges" />
 					</layout:HorizontalLayout>
 				</FlexBox>
-
-			</layout:VerticalLayout>
-		</FlexBox>
-		<FlexBox width="auto" height="auto" class="sapUiTinyMarginBegin"
-			justifyContent="Start">
-			<layout:HorizontalLayout allowWrapping="true">
-				<GenericTile header="{i18n>startpageLineTile1Title}"
-					mode="LineMode" press="externalLinkWhatIsCrypto" />
-				<GenericTile header="{i18n>startpageLineTile2Title}"
-					mode="LineMode" press="externalLinkExchanges" />
-			</layout:HorizontalLayout>
-		</FlexBox>
-	</Page>
-
+			</Page>
+		</app>
+	</Shell>
 </mvc:View>
