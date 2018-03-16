@@ -16,7 +16,7 @@ sap.ui.define([
 			var oItem = oEvent.getSource();
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			MessageToast.show(oItem.getBindingContext("cryptocurrencyData").getPath().substr(1));
-			oRouter.navTo("detail", {
+			oRouter.navTo("detail", { 
 				currencyPath: oItem.getBindingContext("cryptocurrencyData").getPath().substr(1)
 			});
 		}

@@ -176,7 +176,7 @@
 				"newsFeed": {
 					"viewName": "NewsFeed",
 					"viewLevel": 1
-				},
+				}, 
 				"currency": { 
 					"viewName": "Currency",
 					"viewLevel": 1
