@@ -4,8 +4,6 @@
 			pageId="{pageId}"
 			header="{header}"
 			icon="{icon}"
-			title="{title}"
-			description="{description}"
 			groups="{
 				path: 'groups',
 				templateShareable: false
