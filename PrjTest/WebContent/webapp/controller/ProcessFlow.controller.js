@@ -36,10 +36,13 @@ sap.ui.define([
 		onNodePress: function(oEvent) {
 			var oNode = oEvent.getParameters();
 			var sPath = oNode.getBindingContext().getPath() + "/quickView";
-
+			
 			if (!this.oQuickView) {
+		
 				this.oQuickView = sap.ui.xmlfragment("sap.suite.ui.commons.PrjTest.fragment.QuickView", this);
+				MessageToast.show("Merge la press.");
 				this.getView().addDependent(this.oQuickView);
+				
 			}
 			this.oQuickView.bindElement(sPath);
 			this.oQuickView.openBy(oNode);
@@ -50,5 +53,5 @@ sap.ui.define([
 				this.oQuickView.destroy();
 			}
 		}
-		});
 	});
+});
