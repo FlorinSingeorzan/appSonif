@@ -112,7 +112,6 @@
 				"controlId": "PrjTestApp",
 				"controlAggregation": "pages",
 				"transition": "fade",
-				"async": true,
 				"bypassed": {
 					"target": [
 						"startpage"
