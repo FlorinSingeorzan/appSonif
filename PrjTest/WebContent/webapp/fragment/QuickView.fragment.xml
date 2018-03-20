@@ -2,7 +2,6 @@
 	<QuickView id="quickView">
 		<QuickViewPage
 			pageId="{pageId}"
-			header="{header}"
 			icon="{icon}"
 			groups="{
 				path: 'groups',
@@ -16,10 +15,7 @@
 				}">
 				<QuickViewGroupElement
 					label="{label}"
-					value="{value}"
-					url="{url}"
-					type="{elementType}"
-					emailSubject="{emailSubject}">
+					value="{value}">
 				</QuickViewGroupElement>
 			</QuickViewGroup>
 		</QuickViewPage>

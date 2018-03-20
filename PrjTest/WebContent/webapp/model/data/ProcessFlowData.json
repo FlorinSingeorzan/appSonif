@@ -3,48 +3,19 @@
 		{
 			"id": "1",
 			"lane": "0",
-			"title": "Pasul 1",
-			"children": [ 2, 3 ],
+			"children": [ 2 ],
 			"focused": true,
-			"src": "images/ProcessFlowImageContent/1.jpg",
+			"src": "images/ProcessFlowImageContent/transaction.jpg",
 			"quickView": {
 				"pageId": "employeePageId",
-				"header": "Pasl 1 Info",
-				"icon": "images/ProcessFlowImageContent/1.jpg",
+				"icon": "images/ProcessFlowImageContent/transaction.jpg",
 				"groups": [
 					{
-						"heading": "Contact Details",
+						"heading": "Details",
 						"elements": [
 							{
-								"label": "Mobile",
-								"value": "+001 6101 34869-0",
-								"elementType": "mobile"
-							},
-							{
-								"label": "Phone",
-								"value": "+001 6101 34869-1",
-								"elementType": "phone"
-							},
-							{
-								"label": "Email",
-								"value": "john_li@example.com",
-								"emailSubject" : "Subject",
-								"elementType": "email"
-							}
-						]
-					},
-					{
-						"heading": "Company",
-						"elements": [
-							{
-								"label": "Name",
-								"value": "Company A",
-								"url": "http://sap.com",
-								"elementType": "link"
-							},
-							{
-								"label": "Address",
-								"value": "481 West Street, Anytown OH, 45066, USA"
+								"label": "Description",
+								"value": "Someone requests a transaction."
 							}
 						]
 					}
@@ -54,47 +25,18 @@
 		{
 			"id": "2",
 			"lane": "1",
-			"title": "Pasul 2",
-			"children": [ ],
-			"src": "images/ProcessFlowImageContent/2.jpg",
+			"children": [ 3 ],
+			"src": "images/ProcessFlowImageContent/broadcast.jpg",
 			"quickView": {
 				"pageId": "employeePageId",
-				"header": "Pasul 2 Info",
-				"icon": "images/ProcessFlowImageContent/2.jpg",
+				"icon": "images/ProcessFlowImageContent/broadcast.jpg",
 				"groups": [
 					{
-						"heading": "Contact Details",
+						"heading": "Details",
 						"elements": [
 							{
-								"label": "Mobile",
-								"value": "+1 202 555 5555",
-								"elementType": "mobile"
-							},
-							{
-								"label": "Phone",
-								"value": "+1 330 555 5555",
-								"elementType": "phone"
-							},
-							{
-								"label": "Email",
-								"value": "john_miller@example.com",
-								"emailSubject" : "Subject",
-								"elementType": "email"
-							}
-						]
-					},
-					{
-						"heading": "Company",
-						"elements": [
-							{
-								"label": "Name",
-								"value": "Company A",
-								"url": "http://sap.com",
-								"elementType": "link"
-							},
-							{
-								"label": "Address",
-								"value": "481 West Street, Anytown OH, 45066, USA"
+								"label": "Description",
+								"value": "The requested transaction is broadcast to P2P network consisting of computers, known as nodes."
 							}
 						]
 					}
@@ -103,48 +45,19 @@
 		},
 		{
 			"id": "3",
-			"lane": "1",
-			"title": "Pasul 3",
-			"children": [ 4 ],
-			"src": "images/ProcessFlowImageContent/3.jpg",
+			"lane": "2",
+			"children": [ 4, 7 ],
+			"src": "images/ProcessFlowImageContent/algorithm.jpg",
 			"quickView": {
 				"pageId": "employeePageId",
-				"header": "Pasul 3 Info",
-				"icon": "images/ProcessFlowImageContent/3.jpg",
+				"icon": "images/ProcessFlowImageContent/algorithm.jpg",
 				"groups": [
 					{
-						"heading": "Contact Details",
+						"heading": "Details",
 						"elements": [
 							{
-								"label": "Mobile",
-								"value": "+1 605 555 5555",
-								"elementType": "mobile"
-							},
-							{
-								"label": "Phone",
-								"value": "+1 316 555 5555",
-								"elementType": "phone"
-							},
-							{
-								"label": "Email",
-								"value": "li_qin@example.com",
-								"emailSubject" : "Subject",
-								"elementType": "email"
-							}
-						]
-					},
-					{
-						"heading": "Company",
-						"elements": [
-							{
-								"label": "Name",
-								"value": "Company A",
-								"url": "http://sap.com",
-								"elementType": "link"
-							},
-							{
-								"label": "Address",
-								"value": "481 West Street, Anytown OH, 45066, USA"
+								"label": "Description",
+								"value": "The network of nodes validates the transaction and the user's status using known algorithms'."
 							}
 						]
 					}
@@ -153,48 +66,166 @@
 		},
 		{
 			"id": "4",
-			"lane": "2",
-			"title": "Pasul 4",
-			"children": [ ],
-			"src": "images/ProcessFlowImageContent/4.jpg",
+			"lane": "3",
+			"children": [ 5 ],
+			"src": "images/ProcessFlowImageContent/blockdata.jpg",
 			"quickView": {
 				"pageId": "employeePageId",
-				"header": "Pasul 4 Info",
-				"icon": "images/ProcessFlowImageContent/4.jpg",
+				"icon": "images/ProcessFlowImageContent/blockdata.jpg",
 				"groups": [
 					{
-						"heading": "Contact Details",
+						"heading": "Details",
 						"elements": [
 							{
-								"label": "Mobile",
-								"value": "+001 6101 34869-0",
-								"elementType": "mobile"
-							},
-							{
-								"label": "Phone",
-								"value": "+001 6101 34869-1",
-								"elementType": "phone"
-							},
-							{
-								"label": "Email",
-								"value": "bodo_jung@example.com",
-								"emailSubject" : "Subject",
-								"elementType": "email"
+								"label": "Description",
+								"value": "Once verified, the transaction is combined with other transactions to create a new block of data for the ledger."
 							}
 						]
-					},
+					}
+				]
+			}
+		},
+		{
+			"id": "5",
+			"lane": "4",
+			"children": [ 6 ],
+			"src": "images/ProcessFlowImageContent/blockchain.jpg",
+			"quickView": {
+				"pageId": "employeePageId",
+				"icon": "images/ProcessFlowImageContent/blockchain.jpg",
+				"groups": [
 					{
-						"heading": "Company",
+						"heading": "Details",
 						"elements": [
 							{
-								"label": "Name",
-								"value": "Company A",
-								"url": "http://sap.com",
-								"elementType": "link"
-							},
+								"label": "Description",
+								"value": "The new block is then added to the existing blockchain, in a way that is permanent and unalterable."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "6",
+			"lane": "5",
+			"children": [ ],
+			"src": "images/ProcessFlowImageContent/complete.jpg",
+			"quickView": {
+				"pageId": "employeePageId",
+				"icon": "images/ProcessFlowImageContent/complete.jpg",
+				"groups": [
+					{
+						"heading": "Details",
+						"elements": [
 							{
-								"label": "Address",
-								"value": "481 West Street, Anytown OH, 45066, USA"
+								"label": "Description",
+								"value": "The transaction is complete."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "7",
+			"lane": "3",
+			"children": [ 8 ],
+			"src": "images/ProcessFlowImageContent/validation.png",
+			"quickView": {
+				"pageId": "employeePageId",
+				"icon": "images/ProcessFlowImageContent/validation.png",
+				"groups": [
+					{
+						"heading": "Details",
+						"elements": [
+							{
+								"label": "Description",
+								"value": "A verified transaction can involve cryptocurrency, contracts, records, or other information."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "8",
+			"lane": "4",
+			"children": [ 9 ],
+			"src": "images/ProcessFlowImageContent/cryptocurrency.png",
+			"quickView": {
+				"pageId": "employeePageId",
+				"icon": "images/ProcessFlowImageContent/cryptocurrency.png",
+				"groups": [
+					{
+						"heading": "Details",
+						"elements": [
+							{
+								"label": "Description",
+								"value": "Cryptocurrency is a medium of exchange, created and stored electronically in the blockchain, using encryption techniques to control the creation of monetary units and to verify the transfer of funds. Bitcoin is the best known example."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "9",
+			"lane": "5",
+			"children": [ 10 ],
+			"src": "images/ProcessFlowImageContent/novalue.jpg",
+			"quickView": {
+				"pageId": "employeePageId",
+				"icon": "images/ProcessFlowImageContent/novalue.jpg",
+				"groups": [
+					{
+						"heading": "Details",
+						"elements": [
+							{
+								"label": "Description",
+								"value": "Has no intrinsic value in that it is not redeemable for another commodity, such as gold."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "10",
+			"lane": "6",
+			"children": [ 11 ],
+			"src": "images/ProcessFlowImageContent/nophysicalfom.jpg",
+			"quickView": {
+				"pageId": "employeePageId",
+				"icon": "images/ProcessFlowImageContent/nophysicalfom.jpg",
+				"groups": [
+					{
+						"heading": "Details",
+						"elements": [
+							{
+								"label": "Description",
+								"value": "Has no physical form and exists only in the network."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "11",
+			"lane": "7",
+			"children": [ ],
+			"src": "images/ProcessFlowImageContent/nobank.jpg",
+			"quickView": {
+				"pageId": "employeePageId",
+				"icon": "images/ProcessFlowImageContent/nobank.jpg",
+				"groups": [
+					{
+						"heading": "Details",
+						"elements": [
+							{
+								"label": "Description",
+								"value": "Its supply is not determined by a central bank and the network is completely decentralized."
 							}
 						]
 					}
@@ -206,20 +237,42 @@
 		{
 			"id": "0",
 			"position": 0,
-			"icon": "sap-icon://employee",
-			"text": "Level 1"
+			"icon": "sap-icon://wallet"
 		},
 		{
 			"id": "1",
 			"position": 1,
-			"icon": "sap-icon://employee",
-			"text": "Level 2"
+			"icon": "sap-icon://home-share"
 		},
 		{
 			"id": "2",
 			"position": 2,
-			"icon": "sap-icon://employee",
-			"text": "Level 3"
+			"icon": "sap-icon://validate"
+		},
+		{
+			"id": "3",
+			"position": 3,
+			"icon": "sap-icon://checklist-2"
+		},
+		{
+			"id": "4",
+			"position": 4,
+			"icon": "sap-icon://database"
+		},
+		{
+			"id": "5",
+			"position": 5,
+			"icon": "sap-icon://message-success"
+		},
+		{
+			"id": "6",
+			"position": 6,
+			"icon": "sap-icon://sap-logo-shape"
+		},
+		{
+			"id": "7",
+			"position": 7,
+			"icon": "sap-icon://locked"
 		}
 	]
 }

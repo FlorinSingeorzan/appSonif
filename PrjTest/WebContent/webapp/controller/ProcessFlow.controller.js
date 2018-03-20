@@ -40,7 +40,6 @@ sap.ui.define([
 			if (!this.oQuickView) {
 		
 				this.oQuickView = sap.ui.xmlfragment("sap.suite.ui.commons.PrjTest.fragment.QuickView", this);
-				MessageToast.show("Merge la press.");
 				this.getView().addDependent(this.oQuickView);
 				
 			}

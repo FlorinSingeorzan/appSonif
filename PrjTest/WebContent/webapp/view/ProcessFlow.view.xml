@@ -7,7 +7,7 @@
 	<m:Page showHeader="false" backgroundDesign="Solid">
 		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 		<m:Toolbar>
-			<m:Title text="Mining technology details - Image content"/>
+			<m:Title text="Mining technology details - How it works"/>
 			<m:ToolbarSpacer/>
 			<m:Button text="Zoom in" press="onZoomIn" type="Transparent"/>
 			<m:Button text="Zoom out" press="onZoomOut" type="Transparent"/>
@@ -53,8 +53,7 @@
 				<ProcessFlowLaneHeader
 					laneId="{id}"
 					iconSrc="{icon}"
-					position="{position}"
-					text="{text}" />
+					position="{position}"/>
 			</lanes>
 		</ProcessFlow>
 	</m:Page>
