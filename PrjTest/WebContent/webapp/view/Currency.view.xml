@@ -33,10 +33,7 @@
 								<Text text="Chart" />
 							</Column>
 						</columns>
-
-						<items>
 							<ColumnListItem class="numObjInherit"  type="Active"  press="ontest">  <!-- type="Active" -->
-								<cells>
 								<!-- <ObjectIdentifier title="{cryptocurrencyData>name}" />  -->
 									<Link text="{cryptocurrencyData>name}" press="ontest"  emphasized="true"/>
 									<Text text="{cryptocurrencyData>symbol}" />
@@ -77,9 +74,7 @@
 											</micro:points>
 										</micro:LineMicroChart>
 									</FlexBox>
-								</cells>
 							</ColumnListItem>
-						</items>
 
 					</Table>
 				</Panel>

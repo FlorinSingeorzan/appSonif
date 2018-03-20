@@ -28,6 +28,12 @@ sap.ui.define([
 			    case "The best value!":
 			    	window.open("https://www.theguardian.com/technology/2018/feb/02/bitcoin-biggest-bubble-in-history-says-economist-who-predicted-2008-crash","_blank");
 			    	break;
+			    case "Bitcoin PRICE SHOCK: Stark warning cryptocurrency could CRASH faster than dot-com bubble":
+			    	window.open("https://www.express.co.uk/finance/city/934214/Bitcoin-price-shock-cryptocurrency-value-crash-warning-latest-BTC-to-USD-market-prediction","_blank");
+			    	break;
+			    case "Making Sense of the World's Cryptocurrency Rules":
+			    	window.open("https://www.bloomberg.com/news/articles/2018-03-19/is-this-legal-making-sense-of-the-world-s-cryptocurrency-rules","_blank");
+			    	break;
 			    default:   
 			}
 		}
