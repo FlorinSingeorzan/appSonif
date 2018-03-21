@@ -3,9 +3,14 @@
 	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart"
 	height="100%" displayBlock="true" xmlns:suite="sap.suite.ui.commons">
 
-	<Page>
-		<ObjectHeader
-			intro="{cryptocurrencyData>name}"
-			title="{cryptocurrencyData>curentPrice"/>
+	<Page showHeader="false">
+		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<FlexBox width="auto" height="43px" justifyContent="Center">
+		<Text text="{cryptocurrencyData>currencyId}"/>
+		<Text text="{cryptocurrencyData>/name}"/>
+		<Text id="currencyName" text="currencyId"/>
+		<Text text="{symbol}"/>
+		<Text text="Kind of working"/>
+	</FlexBox>
 	</Page>
 </mvc:View>

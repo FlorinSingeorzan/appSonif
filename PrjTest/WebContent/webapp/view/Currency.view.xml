@@ -33,7 +33,7 @@
 								<Text text="Chart" />
 							</Column>
 						</columns>
-							<ColumnListItem class="numObjInherit"  type="Active"  press="ontest">  <!-- type="Active" -->
+							<ColumnListItem class="numObjInherit"  press="ontest">  <!-- type="Active" -->
 								<!-- <ObjectIdentifier title="{cryptocurrencyData>name}" />  -->
 									<Link text="{cryptocurrencyData>name}" press="ontest"  emphasized="true"/>
 									<Text text="{cryptocurrencyData>symbol}" />

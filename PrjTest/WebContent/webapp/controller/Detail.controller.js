@@ -9,17 +9,33 @@ sap.ui.define([
 	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.Detail", {
 		onInit: function() {  
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.getRoute("detail").attachPatternMatched(this._onObjectMatched, this);
+			oRouter.getRoute("vcoin").attachPatternMatched(this._onObjectMatched, this);
 			
-			//var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/CryptocurrencyData.json");
-			//var oModel = new JSONModel(sDataPath);
-			//this.getView().setModel(oModel, "cryptocurrencyData");
 		},
 		_onObjectMatched: function (oEvent) {
+			var cc = oEvent.getParameter("arguments").currencyId;
+			var textId = this.getView().byId("currencyName");
+			textId.setText(cc);
 			this.getView().bindElement({
-				path: "/" + oEvent.getParameter("arguments").currencyPath,
+				path: "/cryptocurrencyData(" + oEvent.getParameter("arguments").currencyId+")",
 				model: "cryptocurrencyData"
+				/*,
+				events : {
+					change: this._onBindingChange.bind(this),
+					dataRequested: function (oEvent) {
+						this.getView().setBusy(true);
+					},
+					dataReceived: function (oEvent) {
+						this.getView().setBusy(false);
+					}
+				}
+				*/
 			});
+		},
+		_onBindingChange : function (oEvent) {
+			if (!this.getView().getBindingContext()) {
+				sap.ui.core.UIComponent.getRouterFor(this).getTargets().display("notFound");
+			}
 		}
 	});
 });  
