@@ -1,110 +1,437 @@
 {
+
 	"Values": [
 		{
 			"month": "Jan 2017",
-			"value": 900
+			"value": 900,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "900$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Feb 2017",
-			"value": 1200
+			"value": 1200,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "1200$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Mar 2017",
-			"value": 1200
+			"value": 1200,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "1200$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Apr 2017",
-			"value": 1800
+			"value": 1800,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "1800$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "May 2017",
-			"value": 2500
+			"value": 2500,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "2500$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Jun 2017",
-			"value": 3000
+			"value": 3000,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "3000$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Jul 2017",
-			"value": 3400
+			"value": 3400,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "3400$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Aug 2017",
-			"value": 5000
+			"value": 5000,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "5000$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Sep 2017",
-			"value": 5800
+			"value": 5800,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "5800$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Oct 2017",
-			"value": 6100
+			"value": 6100,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "6100$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Nov 2017",
-			"value": 7300
+			"value": 7300,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "7300$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Dec 2017",
-			"value": 17500
+			"value": 17500,
+			"quickChartView": {
+				"pageId": "chartYearPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "17500$"
+							}
+						]
+					}
+				]
+			}
 		}
 	],
 	"Values6": [
 		
 		{
 			"month": "Jul 2017",
-			"value": 3400
+			"value": 3400,
+			"quickChartView": {
+				"pageId": "chartMonthPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "3400$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Aug 2017",
-			"value": 5000
+			"value": 5000,
+			"quickChartView": {
+				"pageId": "chartMonthPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "5000$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Sep 2017",
-			"value": 5800
+			"value": 5800,
+			"quickChartView": {
+				"pageId": "chartMonthPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "5800$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Oct 2017",
-			"value": 6100
+			"value": 6100,
+			"quickChartView": {
+				"pageId": "chartMonthPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "6100$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Nov 2017",
-			"value": 7300
+			"value": 7300,
+			"quickChartView": {
+				"pageId": "chartMonthPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "7300$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"month": "Dec 2017",
-			"value": 17500
+			"value": 17500,
+			"quickChartView": {
+				"pageId": "chartMonthPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "17500$"
+							}
+						]
+					}
+				]
+			}
 		}
 	],
 	"ValuesWeek": [
 		
 		{
 			"day": "Monday",
-			"value": 8242.27
+			"value": 8242.27,
+			"quickChartView": {
+				"pageId": "chartWeekPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "8242.27$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"day": "Tuesday",
-			"value": 7003.39
+			"value": 7003.39,
+			"quickChartView": {
+				"pageId": "chartWeekPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "7003.39$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"day": "Wednesday",
-			"value": 7744.56
+			"value": 7744.56,
+			"quickChartView": {
+				"pageId": "chartWeekPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "7744.56$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"day": "Thursday",
-			"value": 7658.00
+			"value": 7658.00,
+			"quickChartView": {
+				"pageId": "chartWeekPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "7658.00$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"day": "Friday",
-			"value": 8217.39
+			"value": 8217.39,
+			"quickChartView": {
+				"pageId": "chartWeekPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "8217.39$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"day": "Saturday",
-			"value": 8750.06
+			"value": 8750.06,
+			"quickChartView": {
+				"pageId": "chartWeekPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "8750.06$"
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"day": "Sunday",
-			"value": 8507.86
+			"value": 8507.86,
+			"quickChartView": {
+				"pageId": "chartWeekPageId",
+				"groups": [
+					{
+					"heading": "Value",
+					"elements": [
+							{
+							"value": "8507.86$"
+							}
+						]
+					}
+				]
+			}
 		}
 	]
+
 }

@@ -7,7 +7,7 @@
 			"focused": true,
 			"src": "images/ProcessFlowImageContent/transaction.jpg",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/transaction.jpg",
 				"groups": [
 					{
@@ -28,7 +28,7 @@
 			"children": [ 3 ],
 			"src": "images/ProcessFlowImageContent/broadcast.jpg",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/broadcast.jpg",
 				"groups": [
 					{
@@ -49,7 +49,7 @@
 			"children": [ 4, 7 ],
 			"src": "images/ProcessFlowImageContent/algorithm.jpg",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/algorithm.jpg",
 				"groups": [
 					{
@@ -70,7 +70,7 @@
 			"children": [ 5 ],
 			"src": "images/ProcessFlowImageContent/blockdata.jpg",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/blockdata.jpg",
 				"groups": [
 					{
@@ -91,7 +91,7 @@
 			"children": [ 6 ],
 			"src": "images/ProcessFlowImageContent/blockchain.jpg",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/blockchain.jpg",
 				"groups": [
 					{
@@ -112,7 +112,7 @@
 			"children": [ ],
 			"src": "images/ProcessFlowImageContent/complete.jpg",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/complete.jpg",
 				"groups": [
 					{
@@ -133,7 +133,7 @@
 			"children": [ 8 ],
 			"src": "images/ProcessFlowImageContent/validation.png",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/validation.png",
 				"groups": [
 					{
@@ -154,7 +154,7 @@
 			"children": [ 9 ],
 			"src": "images/ProcessFlowImageContent/cryptocurrency.png",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/cryptocurrency.png",
 				"groups": [
 					{
@@ -175,7 +175,7 @@
 			"children": [ 10 ],
 			"src": "images/ProcessFlowImageContent/novalue.jpg",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/novalue.jpg",
 				"groups": [
 					{
@@ -196,7 +196,7 @@
 			"children": [ 11 ],
 			"src": "images/ProcessFlowImageContent/nophysicalfom.jpg",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/nophysicalfom.jpg",
 				"groups": [
 					{
@@ -217,7 +217,7 @@
 			"children": [ ],
 			"src": "images/ProcessFlowImageContent/nobank.jpg",
 			"quickView": {
-				"pageId": "employeePageId",
+				"pageId": "miningPageId",
 				"icon": "images/ProcessFlowImageContent/nobank.jpg",
 				"groups": [
 					{
