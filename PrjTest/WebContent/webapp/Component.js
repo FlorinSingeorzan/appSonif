@@ -1,7 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
-	"sap/suite/ui/commons/PrjTest/model/models"
-], function(UIComponent, models) {
+	"sap/suite/ui/commons/PrjTest/model/models",
+	"sap/ui/model/json/JSONModel",
+	"sap/ui/Device"
+], function(UIComponent, models,JSONModel,Device) {
 	"use strict";
 
 	return UIComponent.extend("sap.suite.ui.commons.PrjTest.Component", {
@@ -24,6 +26,13 @@ sap.ui.define([
 
 			// create the views based on the url/hash
 			this.getRouter().initialize();
+			
+			
+			// set device model
+			var oDeviceModel = new JSONModel(Device);
+			oDeviceModel.setDefaultBindingMode("OneWay");
+			this.setModel(oDeviceModel, "device");
+			
 		},
 		createContent: function() {
 			// create root view

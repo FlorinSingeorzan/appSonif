@@ -8,6 +8,7 @@
 		<FlexBox width="auto" height="43px" justifyContent="Center">
 		<Text text="{cryptocurrencyData>currencyId}"/>
 		<Text text="{cryptocurrencyData>/name}"/>
+		<Text text="{/cryptocurrencyData/name}"/>
 		<Text id="currencyName" text="currencyId"/>
 		<Text text="{symbol}"/>
 		<Text text="Kind of working"/>

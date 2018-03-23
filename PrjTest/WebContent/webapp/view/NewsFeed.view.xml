@@ -2,24 +2,22 @@
 	xmlns:layout="sap.ui.layout" xmlns:suite="sap.suite.ui.commons"
 	controllerName="sap.suite.ui.commons.PrjTest.controller.NewsFeed"
 	displayBlock="true">
-	<Page showHeader="false"  backgroundDesign="Solid">
+	<Page showHeader="false" backgroundDesign="Solid">
 		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 		<FlexBox width="auto" height="auto"
-			class="sapUiMediumMarginBegin sapUiMediumMarginEnd" justifyContent="Start"
+			class="sapUiMediumMarginBegin sapUiMediumMarginEnd" justifyContent="Center"
 			backgroundDesign="Translucent">
 			<layout:VerticalLayout class="sapUiContentPadding"
 				width="auto">
-				<layout:content>
-					<List headerText="What's new" items="{path: 'news>/News', templateShareable:true}">
-						<FeedListItem templateShareable="true" sender="{news>content}" icon="{news>image}"
-							iconPress="onOriginalPostPage" senderPress="onOriginalPostPage"
-							iconDensityAware="false" info="{news>source}" timestamp="{news>date}"
-							text="{news>text}" convertLinksToAnchorTags="All" actions="{}">
-							<FeedListItemAction templateShareable="true" text="{Text}" icon="{Icon}"
-								key="{Key}" press="onActionPressed" />
-						</FeedListItem>
-					</List>
-				</layout:content>
+				<List headerText="What's new" items="{path: 'news>/News', templateShareable:true}">
+					<FeedListItem templateShareable="true" sender="{news>content}"
+						icon="{news>image}" iconPress="onOriginalPostPage" senderPress="onOriginalPostPage"
+						iconDensityAware="false" info="{news>source}" timestamp="{news>date}"
+						text="{news>text}" convertLinksToAnchorTags="All" actions="{}">
+						<FeedListItemAction templateShareable="true"
+							text="{Text}" icon="{Icon}" key="{Key}" press="onActionPressed" />
+					</FeedListItem>
+				</List>
 			</layout:VerticalLayout>
 		</FlexBox>
 	</Page>

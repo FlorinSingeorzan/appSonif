@@ -17,7 +17,7 @@ sap.ui.define([
 			var textId = this.getView().byId("currencyName");
 			textId.setText(cc);
 			this.getView().bindElement({
-				path: "/cryptocurrencyData(" + oEvent.getParameter("arguments").currencyId+")",
+				path: "/" + oEvent.getParameter("arguments").currencyId,
 				model: "cryptocurrencyData"
 				/*,
 				events : {
