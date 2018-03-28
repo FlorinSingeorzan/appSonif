@@ -78,6 +78,9 @@ sap.ui.define([
 		},
 		onNavToCurrency: function(){
 			this.getRouter().navTo("currency");
+		},
+		onNavToMarket : function(){
+			this.getRouter().navTo("market");
 		}
 	});
 });

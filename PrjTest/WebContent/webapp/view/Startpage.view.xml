@@ -11,6 +11,7 @@
 					<!-- </subHeader> -->
 					<FlexBox width="auto" height="auto" justifyContent="Center"
 						backgroundDesign="Translucent">
+						
 						<layout:VerticalLayout class="sapUiResponsiveMargin">
 							<FlexBox width="auto" height="38rem">
 								<layout:HorizontalLayout
@@ -39,8 +40,7 @@
 										<tileContent>
 											<TileContent>
 												<content>
-													<NumericContent 
-														value="324M"
+													<NumericContent value="324M"
 														icon="sap-icon://collections-insight" />
 												</content>
 											</TileContent>
@@ -85,6 +85,17 @@
 											<TileContent>
 												<content>
 													<ImageContent src="sap-icon://business-objects-experience" />
+												</content>
+											</TileContent>
+										</tileContent>
+									</GenericTile>
+									<GenericTile class="sapUiTinyMarginEnd "
+										header="{i18n>startpageMarket}" subheader="{i18n>startpagePercent}"
+										press="onNavToMarket">
+										<tileContent>
+											<TileContent>
+												<content>
+													<ImageContent src="sap-icon://area-chart" />
 												</content>
 											</TileContent>
 										</tileContent>

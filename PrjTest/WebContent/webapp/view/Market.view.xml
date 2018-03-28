@@ -1,0 +1,82 @@
+<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Market"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout"
+	xmlns:microchart="sap.suite.ui.microchart" >
+
+	<Page showHeader="false" backgroundDesign="Info">
+		<!-- <subHeader class="subHeaderDesign"> -->
+		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<!-- </subHeader> -->
+		<Panel>
+
+			<FlexBox justifyContent="Center" backgroundDesign="Translucent"
+				width="auto" height="42rem">
+
+				<layout:HorizontalLayout class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					allowWrapping="true">
+					<FlexBox class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+						width="auto" height="auto" backgroundDesign="Translucent"
+						justifyContent="Center">
+						<Text text="Cryptocurrency Trading Market" />
+					</FlexBox>
+					<FlexBox class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+						width="40rem" height="20rem" backgroundDesign="Translucent">
+
+						<items>
+							<microchart:InteractiveDonutChart
+								selectionChanged="onSelectionChanged" displayedSegments="10"
+								selectionEnabled="true">
+								<microchart:segments>
+									<microchart:InteractiveDonutChartSegment
+										label="Bitfinex" value="18" displayedValue="18.0%" />
+									<microchart:InteractiveDonutChartSegment
+										label="Kraken" value="12" displayedValue="12.0%" />
+									<microchart:InteractiveDonutChartSegment
+										label="OKCoin" value="12" displayedValue="12.0%" />
+									<microchart:InteractiveDonutChartSegment
+										label="BTCChine" value="10" displayedValue="10.0%" />
+									<microchart:InteractiveDonutChartSegment
+										label="bitFlyer" value="10" displayedValue="10.0%" />
+									<microchart:InteractiveDonutChartSegment
+										label="CoinBase" value="10" displayedValue="10.0%" />
+									<microchart:InteractiveDonutChartSegment
+										label="Bitstamp" value="10" displayedValue="10.0%" />
+									<microchart:InteractiveDonutChartSegment
+										label="Others" value="9" displayedValue="9.0%" color="Good" />
+									<microchart:InteractiveDonutChartSegment
+										label="Gemini" value="7" displayedValue="7.0%" />
+									<microchart:InteractiveDonutChartSegment
+										label="BitX" value="4" displayedValue="4.0%" />
+								</microchart:segments>
+							</microchart:InteractiveDonutChart>
+						</items>
+					</FlexBox>
+					</layout:HorizontalLayout>
+					<layout:HorizontalLayout class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					allowWrapping="true">
+					<FlexBox class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+						width="auto" height="auto" backgroundDesign="Translucent"
+						justifyContent="Center">
+						<Text text="Cryptocurrency Trading Coins" />
+					</FlexBox>
+					<FlexBox class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
+						width="40rem" height="20rem" backgroundDesign="Translucent">
+						<items>
+							<microchart:InteractiveDonutChart
+								selectionChanged="onSelectionChanged">
+								<microchart:segments>
+									<microchart:InteractiveDonutChartSegment
+										label="Implementation Phase" value="40.0" displayedValue="40.0%" />
+									<microchart:InteractiveDonutChartSegment
+										label="Design Phase" value="21.5" displayedValue="21.5%" />
+									<microchart:InteractiveDonutChartSegment
+										label="Test Phase" value="38.5" displayedValue="38.5%" />
+								</microchart:segments>
+							</microchart:InteractiveDonutChart>
+						</items>
+					</FlexBox>
+					</layout:HorizontalLayout>
+			</FlexBox>
+		</Panel>
+	</Page>
+
+</mvc:View>

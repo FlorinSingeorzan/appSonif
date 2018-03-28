@@ -151,6 +151,11 @@
 					"pattern": "currency/{currencyId}",
 					"name": "vcoin",
 					"target": "vcoin"
+				},
+				{
+					"pattern": "market",
+					"name": "market",
+					"target": "market"
 				}
 			],
 			"targets": {
@@ -187,6 +192,11 @@
 					"viewId": "notFound",
 					"viewName": "NotFound",
 					"transition": "show"
+				},
+				"market": {
+					"viewId": "market",
+					"viewName": "Market",
+					"transition": "slide"
 				}
 			}
 		}
