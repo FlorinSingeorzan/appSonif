@@ -1,4 +1,4 @@
-<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Market"
+<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Convertor"
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
 	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart">
 
@@ -6,12 +6,27 @@
 		<!-- <subHeader class="subHeaderDesign"> -->
 		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 		<!-- </subHeader> -->
-		<Panel>
+		<Panel class="sapUiNoContentPadding">
 
-			<FlexBox justifyContent="Center" backgroundDesign="Translucent"
-				width="auto" height="42rem">
+			<FlexBox class="sapUiMediumMarginBegin sapUiMediumMarginEnd"
+				justifyContent="Start" backgroundDesign="Translucent" width="auto"
+				height="42rem">
+				<FlexBox
+					class="sapUiLargeMarginTop sapUiSmallMarginBegin sapUiSmallMarginEnd"
+					justifyContent="Start" backgroundDesign="Translucent" width="auto"
+					height="auto">
+					<!-- <Label text="Dollars" design="Bold" labelFor=""/> -->
+					<Input id="dollar" type="Number" liveChange="dollarChange"
+						fieldWidth="60%" valueLiveUpdate="true" description="Dollar" />
+					<layout:HorizontalLayout>
+					<Input id="bitcoin" type="Number" liveChange="bitcoinChange"
+						fieldWidth="60%" valueLiveUpdate="true" description="Bitcoin" />
+					</layout:HorizontalLayout>
+					<Input id="ethereum" type="Number" liveChange="ethereumChange"
+						fieldWidth="60%" valueLiveUpdate="true" description="Ethereum" />
+				</FlexBox>
 
-				
+
 			</FlexBox>
 		</Panel>
 	</Page>

@@ -7,6 +7,5 @@
 				text="SONIF" type="Emphasized" press="navHome" ariaLabelledBy="editButtonLabel" />
 		</FlexBox>
 
-
 	</Toolbar>
 </core:View>
