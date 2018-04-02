@@ -81,52 +81,64 @@ sap.ui.define([
 
 			var oCarousel = this.getView().byId("carouselSample");
 			oCarousel.destroyPages();
-
-			for (var i = 0; i < numberOfImages; i++) {
-				switch (i+1){
-				case 1:
-					var imgSrc = "images/ProcessFlowImageContent/1.jpg";
-					var imgAlt = "Example picture " + (i + 1);
-					var img = new sap.m.Image( {
-						src: imgSrc,
-						alt: imgAlt,
-						densityAware: false,
-						decorative: false
-					});
-					oCarousel.addPage(img);
-				case 2:
-					var imgSrc = "images/ProcessFlowImageContent/2.jpg";
-					var imgAlt = "Example picture " + (i + 1);
-					var img = new sap.m.Image( {
-						src: imgSrc,
-						alt: imgAlt,
-						densityAware: false,
-						decorative: false
-					});
-					oCarousel.addPage(img);
-				case 3:
-					var imgSrc = "images/ProcessFlowImageContent/3.jpg";
-					var imgAlt = "Example picture " + (i + 1);
-					var img = new sap.m.Image( {
-						src: imgSrc,
-						alt: imgAlt,
-						densityAware: false,
-						decorative: false
-					});
-					oCarousel.addPage(img);
-				}
-/*
-				var imgId = "pic" + (i + 1);
-				var imgSrc = "{sap.suite.ui.commons.TestPopUpChart.model.data.ProcessFlowData>/images/" + i + "}";
-				var imgAlt = "Example picture " + (i + 1);
-				var img = new sap.m.Image(imgId, {
-					src: imgSrc,
-					alt: imgAlt,
-					densityAware: false,
-					decorative: false
-				});
-*/
-				oCarousel.addPage(img);
+			numberOfImages = 5;
+			for (var i = 1; i <= numberOfImages; i++) {
+					if (i == 1){
+						var imgSrc = "images/ProcessFlowImageContent/1.jpg";
+						var imgAlt = "Example picture " + (i);
+						var img = new sap.m.Image( {
+							src: imgSrc,
+							alt: imgAlt,
+							densityAware: false,
+							decorative: false
+						});
+						oCarousel.addPage(img);
+					}
+					else if (i == 2){
+						var imgSrc = "images/ProcessFlowImageContent/2.jpg";
+						var imgAlt = "Example picture " + (i);
+						var img = new sap.m.Image( {
+							src: imgSrc,
+							alt: imgAlt,
+							densityAware: false,
+							decorative: false
+						});
+						oCarousel.addPage(img);
+					}
+					else if (i == 3){
+						var imgSrc = "images/ProcessFlowImageContent/3.jpg";
+						var imgAlt = "Example picture " + (i);
+						var img = new sap.m.Image( {
+							src: imgSrc,
+							alt: imgAlt,
+							densityAware: false,
+							decorative: false
+						});
+						oCarousel.addPage(img);
+					}
+					else if (i == 4){
+						var imgSrc = "images/ProcessFlowImageContent/4.jpg";
+						var imgAlt = "Example picture " + (i);
+						var img = new sap.m.Image( {
+							src: imgSrc,
+							alt: imgAlt,
+							densityAware: false,
+							decorative: false
+						});
+						oCarousel.addPage(img);
+					}
+					else if (i == 5){
+						var imgSrc = "images/ProcessFlowImageContent/5.jpg";
+						var imgAlt = "Example picture " + (i);
+						var img = new sap.m.Image( {
+							src: imgSrc,
+							alt: imgAlt,
+							densityAware: false,
+							decorative: false
+						});
+						oCarousel.addPage(img);
+					}
+				
 			}
 		},
 
