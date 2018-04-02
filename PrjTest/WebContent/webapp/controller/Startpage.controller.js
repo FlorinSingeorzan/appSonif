@@ -81,6 +81,9 @@ sap.ui.define([
 		},
 		onNavToMarket : function(){
 			this.getRouter().navTo("market");
+		},
+		onNavToConvertor : function(){
+			this.getRouter().navTo("convertor");
 		}
 	});
 });

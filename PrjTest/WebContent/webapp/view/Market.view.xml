@@ -1,6 +1,6 @@
 <mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Market"
-	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout"
-	xmlns:microchart="sap.suite.ui.microchart" >
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart">
 
 	<Page showHeader="false" backgroundDesign="Info">
 		<!-- <subHeader class="subHeaderDesign"> -->
@@ -16,10 +16,10 @@
 					<FlexBox class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
 						width="auto" height="auto" backgroundDesign="Translucent"
 						justifyContent="Center">
-						<Text text="Cryptocurrency Trading Market" />
+						<Text text="{i18n>cryptoMarket}" />
 					</FlexBox>
 					<FlexBox class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-						width="40rem" height="20rem" backgroundDesign="Translucent">
+						width="45rem" height="20rem" backgroundDesign="Translucent">
 
 						<items>
 							<microchart:InteractiveDonutChart
@@ -50,31 +50,39 @@
 							</microchart:InteractiveDonutChart>
 						</items>
 					</FlexBox>
-					</layout:HorizontalLayout>
-					<layout:HorizontalLayout class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+				</layout:HorizontalLayout>
+				<layout:HorizontalLayout class="sapUiTinyMarginBegin sapUiTinyMarginTop"
 					allowWrapping="true">
 					<FlexBox class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
 						width="auto" height="auto" backgroundDesign="Translucent"
 						justifyContent="Center">
-						<Text text="Cryptocurrency Trading Coins" />
+						<Text text="{i18n>biggestCrypto}"/>
 					</FlexBox>
 					<FlexBox class="sapUiTinyMarginBegin sapUiTinyMarginEnd"
-						width="40rem" height="20rem" backgroundDesign="Translucent">
+						width="45rem" height="20rem" backgroundDesign="Translucent">
 						<items>
 							<microchart:InteractiveDonutChart
-								selectionChanged="onSelectionChanged">
+								selectionChanged="onSelectionChanged" displayedSegments="6">
 								<microchart:segments>
 									<microchart:InteractiveDonutChartSegment
-										label="Implementation Phase" value="40.0" displayedValue="40.0%" />
+										label="Ripple" value="36.0" displayedValue="36.0%" />
 									<microchart:InteractiveDonutChartSegment
-										label="Design Phase" value="21.5" displayedValue="21.5%" />
+										label="NEM" value="29.8" displayedValue="29.8%" />
 									<microchart:InteractiveDonutChartSegment
-										label="Test Phase" value="38.5" displayedValue="38.5%" />
+										label="Ardor" value="16.8" displayedValue="16.8%" />
+									<microchart:InteractiveDonutChartSegment
+										label="Stellar" value="14.4" displayedValue="14.4%" />
+									<microchart:InteractiveDonutChartSegment
+										label="Dash" value="9.2" displayedValue="9.2%" />
+									<microchart:InteractiveDonutChartSegment
+										label="Etherum" value="9.1" displayedValue="9.1%" />
 								</microchart:segments>
+
+
 							</microchart:InteractiveDonutChart>
 						</items>
 					</FlexBox>
-					</layout:HorizontalLayout>
+				</layout:HorizontalLayout>
 			</FlexBox>
 		</Panel>
 	</Page>

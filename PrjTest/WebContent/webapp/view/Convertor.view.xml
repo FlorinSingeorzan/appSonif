@@ -1,0 +1,19 @@
+<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Market"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart">
+
+	<Page showHeader="false" backgroundDesign="Info">
+		<!-- <subHeader class="subHeaderDesign"> -->
+		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<!-- </subHeader> -->
+		<Panel>
+
+			<FlexBox justifyContent="Center" backgroundDesign="Translucent"
+				width="auto" height="42rem">
+
+				
+			</FlexBox>
+		</Panel>
+	</Page>
+
+</mvc:View>

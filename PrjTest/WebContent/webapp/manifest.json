@@ -156,6 +156,11 @@
 					"pattern": "market",
 					"name": "market",
 					"target": "market"
+				},
+				{
+					"pattern": "convertor",
+					"name": "convertor",
+					"target": "convertor"
 				}
 			],
 			"targets": {
@@ -196,7 +201,12 @@
 				"market": {
 					"viewId": "market",
 					"viewName": "Market",
-					"transition": "slide"
+					"transition": "show"
+				},
+				"convertor": {
+					"viewId": "convertor",
+					"viewName": "Convertor",
+					"transition": "fade"
 				}
 			}
 		}
