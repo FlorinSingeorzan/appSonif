@@ -158,9 +158,15 @@
 					"target": "market"
 				},
 				{
-					"pattern": "convertor",
-					"name": "convertor",
-					"target": "convertor"
+					"pattern": "converter",
+					"name": "converter",
+					"target": "converter"
+				}
+				,
+				{
+					"pattern": "faq",
+					"name": "faq",
+					"target": "faq"
 				}
 			],
 			"targets": {
@@ -203,10 +209,13 @@
 					"viewName": "Market",
 					"transition": "show"
 				},
-				"convertor": {
-					"viewId": "convertor",
-					"viewName": "Convertor",
-					"transition": "fade"
+				"converter": {
+					"viewId": "converter",
+					"viewName": "Converter"
+				},
+				"faq": {
+					"viewId": "faq",
+					"viewName": "Faq"
 				}
 			}
 		}

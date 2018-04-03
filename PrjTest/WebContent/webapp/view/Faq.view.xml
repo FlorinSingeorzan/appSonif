@@ -1,0 +1,23 @@
+<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Faq"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart">
+
+	<Page showHeader="false" backgroundDesign="Info">
+		<!-- <subHeader class="subHeaderDesign"> -->
+		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<!-- </subHeader> -->
+		<Panel class="sapUiNoContentPadding">
+
+			<FlexBox class="sapUiMediumMarginBegin sapUiMediumMarginEnd"
+				justifyContent="Start" backgroundDesign="Translucent" width="auto"
+				height="42rem">
+				<FlexBox>
+					
+				</FlexBox>
+
+
+			</FlexBox>
+		</Panel>
+	</Page>
+
+</mvc:View>

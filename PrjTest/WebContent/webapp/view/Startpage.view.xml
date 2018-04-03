@@ -13,7 +13,7 @@
 						backgroundDesign="Translucent">
 
 						<layout:VerticalLayout class="sapUiResponsiveMargin">
-							<FlexBox width="auto" height="38rem">
+							<FlexBox width="auto" height="38rem" >
 								<layout:HorizontalLayout
 									class="sapUiTinyMarginBegin sapUiTinyMarginTop" allowWrapping="true">
 									<SlideTile class="sapUiTinyMarginEnd " tiles="{news>/News}">
@@ -36,7 +36,7 @@
 										</GenericTile>
 									</SlideTile>
 									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>startpageCurrencyTitle}"
-										press="onNavToCurrency" frameType="TwoByOne">
+										press="onNavToCurrency">
 										<tileContent>
 											<TileContent>
 												<content>
@@ -105,6 +105,16 @@
 											<TileContent>
 												<content>
 													<ImageContent src="sap-icon://simulate" />
+												</content>
+											</TileContent>
+										</tileContent>
+									</GenericTile>
+									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>faqTitle}"
+										subheader="{i18n>faqSubtitle}" press="onNavToFaq">
+										<tileContent>
+											<TileContent>
+												<content>
+													<ImageContent src="sap-icon://travel-request" />
 												</content>
 											</TileContent>
 										</tileContent>
