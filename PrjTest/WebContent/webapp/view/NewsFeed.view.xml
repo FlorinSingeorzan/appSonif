@@ -4,11 +4,9 @@
 	displayBlock="true">
 	<Page showHeader="false" backgroundDesign="Solid">
 		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
-		<FlexBox width="auto" height="auto"
-			class="sapUiMediumMarginBegin sapUiMediumMarginEnd" justifyContent="Center"
-			backgroundDesign="Translucent">
-			<layout:VerticalLayout class="sapUiContentPadding"
-				width="auto">
+		<content>
+		
+			
 				<List headerText="What's new" items="{path: 'news>/News', templateShareable:true}">
 					<FeedListItem templateShareable="true" sender="{news>content}"
 						icon="{news>image}" iconPress="onOriginalPostPage" senderPress="onOriginalPostPage"
@@ -18,8 +16,9 @@
 							text="{Text}" icon="{Icon}" key="{Key}" press="onActionPressed" />
 					</FeedListItem>
 				</List>
-			</layout:VerticalLayout>
-		</FlexBox>
+			
+		
+		</content>
 	</Page>
 	<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 </mvc:View>

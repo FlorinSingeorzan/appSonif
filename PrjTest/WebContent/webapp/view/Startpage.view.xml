@@ -1,19 +1,18 @@
 <mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Startpage"
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
-	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart">
-	<Shell showLogout="false">
-		<app>
-			<Page showHeader="false" backgroundDesign="Info">
+	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart"  xmlns:html="http://www.w3.org/1999/xhtml">
+	
+			<Page showHeader="false" backgroundDesign="Info" >
 				<Panel>	<!-- expandable="{device>/system/phone}" expanded="{= !${device>/system/phone} 
 						}" -->
 					<!-- <subHeader class="subHeaderDesign"> -->
 					<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 					<!-- </subHeader> -->
-					<FlexBox width="auto" height="auto" justifyContent="Center"
+				<FlexBox  id="sdadas" wrap="Wrap" width="auto" height="auto" justifyContent="Center" 
 						backgroundDesign="Translucent">
 
-						<layout:VerticalLayout class="sapUiResponsiveMargin">
-							<FlexBox width="auto" height="38rem" >
+						<layout:VerticalLayout width="auto" class="sapUiResponsiveMargin" allowWrapping="true">
+							<FlexBox displayInline="true"  justifyContent="Center" width="auto" height="auto" class="sapUiNoMarginBottom" >
 								<layout:HorizontalLayout
 									class="sapUiTinyMarginBegin sapUiTinyMarginTop" allowWrapping="true">
 									<SlideTile class="sapUiTinyMarginEnd " tiles="{news>/News}">
@@ -124,17 +123,19 @@
 
 						</layout:VerticalLayout>
 					</FlexBox>
-					<FlexBox width="auto" height="auto" class="sapUiTinyMarginBegin"
-						justifyContent="Start">
-						<layout:HorizontalLayout allowWrapping="true">
-							<GenericTile header="{i18n>startpageLineTile1Title}"
-								mode="LineMode" press="externalLinkWhatIsCrypto" />
-							<GenericTile header="{i18n>startpageLineTile2Title}"
-								mode="LineMode" press="externalLinkExchanges" />
-						</layout:HorizontalLayout>
-					</FlexBox>
+					<FlexBox width="auto" height="8rem" backgroundDesign="Translucent" class=""/>
+					    
 				</Panel>
+				<FlexBox width="auto" height="auto" class="sapUiSmallMarginBegin sapUiSmallMarginEnd"
+					justifyContent="Start" backgroundDesign="Translucent" >
+					<layout:HorizontalLayout allowWrapping="true">
+						<GenericTile size="auto" header="{i18n>startpageLineTile1Title}"
+							mode="LineMode" press="externalLinkWhatIsCrypto" />
+						<GenericTile size="auto" header="{i18n>startpageLineTile2Title}"
+							mode="LineMode" press="externalLinkExchanges" />
+					</layout:HorizontalLayout>
+				</FlexBox>
+
 			</Page>
-		</app>
-	</Shell>
+
 </mvc:View>
