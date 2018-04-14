@@ -5,7 +5,6 @@
 	<Page showHeader="false" backgroundDesign="Solid">
 		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 		<content>
-		
 			
 				<List headerText="What's new" items="{path: 'news>/News', templateShareable:true}">
 					<FeedListItem templateShareable="true" sender="{news>content}"

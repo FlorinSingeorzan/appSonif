@@ -7,7 +7,7 @@
 						}" -->
 					<!-- <subHeader class="subHeaderDesign"> -->
 					<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
-					<!-- </subHeader> -->
+					<!-- </subHeader> --> 
 				<FlexBox  id="sdadas" wrap="Wrap" width="auto" height="auto" justifyContent="Center" 
 						backgroundDesign="Translucent">
 
