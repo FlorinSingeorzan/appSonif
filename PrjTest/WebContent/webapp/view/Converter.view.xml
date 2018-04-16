@@ -7,27 +7,15 @@
 		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 		<!-- </subHeader> -->
 		<Panel class="sapUiNoContentPadding">
-
-			<FlexBox class="sapUiMediumMarginBegin sapUiMediumMarginEnd"
-				justifyContent="Start" backgroundDesign="Translucent" width="auto"
-				height="42rem">
-				<FlexBox
-					class="sapUiLargeMarginTop sapUiSmallMarginBegin sapUiSmallMarginEnd"
-					justifyContent="Start" backgroundDesign="Translucent" width="auto"
-					height="auto">
-					<!-- <Label text="Dollars" design="Bold" labelFor=""/> -->
+		<content>
+			
 					<Input id="dollar" type="Number" liveChange="dollarChange"
-						fieldWidth="60%" valueLiveUpdate="true" description="Dollar" />
-					<layout:HorizontalLayout>
+						width="50%" valueLiveUpdate="true" placeholder="Dollar" />	
 					<Input id="bitcoin" type="Number" liveChange="bitcoinChange"
-						fieldWidth="60%" valueLiveUpdate="true" description="Bitcoin" />
-					</layout:HorizontalLayout>
+						width="50%" valueLiveUpdate="true" placeholder="Bitcoin" />
 					<Input id="ethereum" type="Number" liveChange="ethereumChange"
-						fieldWidth="60%" valueLiveUpdate="true" description="Ethereum" />
-				</FlexBox>
-
-
-			</FlexBox>
+						width="100%" valueLiveUpdate="true" placeholder="Ethereum" />
+		</content>
 		</Panel>
 	</Page>
 
