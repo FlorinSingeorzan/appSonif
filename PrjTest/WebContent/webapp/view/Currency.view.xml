@@ -3,83 +3,74 @@
 	xmlns:micro="sap.suite.ui.microchart"
 	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
 	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart"
-	height="100%" displayBlock="true" xmlns:suite="sap.suite.ui.commons">
+	height="100%" displayBlock="true" xmlns:suite="sap.suite.ui.commons" >
 
 	<Page showHeader="false" backgroundDesign="Info">
 		<!-- <subHeader class="subHeaderDesign"> -->
 		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 		<!-- </subHeader> -->
-		<FlexBox width="auto" height="auto" justifyContent="Center"
-			backgroundDesign="Translucent">
-			<layout:VerticalLayout class="sapUiResponsiveMargin">
-				<Panel>
-					<Table id="currencyTable" inset="false"
-						items="{cryptocurrencyData>/CryptocurrencyData}" growing="true"
-						growingThreshold="100">
-						<columns>
-							<Column demandPopin="true" minScreenWidth="Tablet">
-								<Text text="Name" />
-							</Column>
-							<Column demandPopin="true" minScreenWidth="Tablet">
-								<Text text="Symbol" />
-							</Column>
-							<Column demandPopin="true" minScreenWidth="Tablet">
-								<Text text="Value" />
-							</Column>
-							<Column demandPopin="true" minScreenWidth="Tablet">
-								<Text text="24 Change" />
-							</Column>
-							<Column demandPopin="true" minScreenWidth="Tablet">
-								<Text text="Chart" />
-							</Column>
-						</columns>
-							<ColumnListItem class="numObjInherit"  press="ontest">  <!-- type="Active" -->
-								<!-- <ObjectIdentifier title="{cryptocurrencyData>name}" />  -->
-									<Link text="{cryptocurrencyData>name}" press="ontest"  emphasized="true"/>
-									<Text text="{cryptocurrencyData>symbol}" />
-									<Text text="{cryptocurrencyData>curentPrice}" />
-									<!-- <Text text="{cryptocurrencyData>change24}" /> -->
+			<Panel expandable="{device>/system/phone}"
+			expanded="{= !${device>/system/phone} }">
+					<content>
+				<Table id="currencyTable" items="{cryptocurrencyData>/CryptocurrencyData}"
+					growing="true" growingThreshold="100" growingScrollToLoad="true">
+					<columns>
+						<Column demandPopin="true" minScreenWidth="Phone">
+							<Label text="Name" />
+						</Column>
+						<Column demandPopin="true" minScreenWidth="Phone">
+							<Label text="Symbol" />
+						</Column>
+						<Column demandPopin="true" minScreenWidth="Phone">
+							<Label text="Value" />
+						</Column>
+						<Column demandPopin="true" minScreenWidth="Phone">
+							<Label text="24 Change" />
+						</Column>
+						<Column class="sapUiVisibleOnlyOnDesktop" demandPopin="true" minScreenWidth="Phone">
+							<Label class="sapUiVisibleOnlyOnDesktop" text="Chart" />
+						</Column>
+					</columns>
+					<ColumnListItem class="numObjInherit" press="ontest">  <!-- type="Active" -->
+						<!-- <ObjectIdentifier title="{cryptocurrencyData>name}" /> -->
+						<Link text="{cryptocurrencyData>name}" press="ontest"
+							emphasized="true" />
+						<Text text="{cryptocurrencyData>symbol}" />
+						<Text text="{cryptocurrencyData>curentPrice}" />
+						<!-- <Text text="{cryptocurrencyData>change24}" /> -->
 
-									<ObjectListItem class="numObjInherit"
-										number="{parts: [{path: 'cryptocurrencyData>change24'}]}"
-										numberUnit="%"
-										numberState="{= ${cryptocurrencyData>change24}> 0 ? 'Success' : 'Error' }" />
+						<ObjectListItem class="numObjInherit"
+							number="{parts: [{path: 'cryptocurrencyData>change24'}]}"
+							numberUnit="%"
+							numberState="{= ${cryptocurrencyData>change24}> 0 ? 'Success' : 'Error' }" />
 
-									<FlexBox height="80px" width="180px">
-										<micro:LineMicroChart threshold="40"
-											size="Responsive" app:name="line" press="press"
-											leftTopLabel="{cryptocurrencyData>startValue}"
-											leftBottomLabel="{cryptocurrencyData>startDate}"
-											rightTopLabel="{cryptocurrencyData>currentValue}"
-											rightBottomLabel="{cryptocurrencyData>currentDate}">
-											<micro:points>
-												<micro:LineMicroChartEmphasizedPoint
-													x="{cryptocurrencyData>x1}" y="{cryptocurrencyData>y1}"
-													show="true" />
-												<micro:LineMicroChartEmphasizedPoint
-													x="{cryptocurrencyData>x2}" y="{cryptocurrencyData>y2}"
-													show="true" />
-												<micro:LineMicroChartEmphasizedPoint
-													x="{cryptocurrencyData>x3}" y="{cryptocurrencyData>y3}"
-													show="true" />
-												<micro:LineMicroChartEmphasizedPoint
-													x="{cryptocurrencyData>x4}" y="{cryptocurrencyData>y4}"
-													show="true" />
-												<micro:LineMicroChartEmphasizedPoint
-													x="{cryptocurrencyData>x5}" y="{cryptocurrencyData>y5}"
-													show="true" />
-												<micro:LineMicroChartEmphasizedPoint
-													x="{cryptocurrencyData>x6}" y="{cryptocurrencyData>y6}"
-													show="true" />
-											</micro:points>
-										</micro:LineMicroChart>
-									</FlexBox>
-							</ColumnListItem>
+						<FlexBox height="80px" width="180px"  class="sapUiVisibleOnlyOnDesktop" >
+							<micro:LineMicroChart threshold="40" size="Responsive"
+								app:name="line" press="press" leftTopLabel="{cryptocurrencyData>startValue}"
+								leftBottomLabel="{cryptocurrencyData>startDate}" rightTopLabel="{cryptocurrencyData>currentValue}"
+								rightBottomLabel="{cryptocurrencyData>currentDate}">
+								<micro:points>
+									<micro:LineMicroChartEmphasizedPoint
+										x="{cryptocurrencyData>x1}" y="{cryptocurrencyData>y1}" show="true" />
+									<micro:LineMicroChartEmphasizedPoint
+										x="{cryptocurrencyData>x2}" y="{cryptocurrencyData>y2}" show="true" />
+									<micro:LineMicroChartEmphasizedPoint
+										x="{cryptocurrencyData>x3}" y="{cryptocurrencyData>y3}" show="true" />
+									<micro:LineMicroChartEmphasizedPoint
+										x="{cryptocurrencyData>x4}" y="{cryptocurrencyData>y4}" show="true" />
+									<micro:LineMicroChartEmphasizedPoint
+										x="{cryptocurrencyData>x5}" y="{cryptocurrencyData>y5}" show="true" />
+									<micro:LineMicroChartEmphasizedPoint
+										x="{cryptocurrencyData>x6}" y="{cryptocurrencyData>y6}" show="true" />
+								</micro:points>
+							</micro:LineMicroChart>
+						</FlexBox>
+					</ColumnListItem>
 
-					</Table>
-				</Panel>
-			</layout:VerticalLayout>
-		</FlexBox>
+				</Table>
+				</content>
+			</Panel>
+		
 	</Page>
 
 </mvc:View>
