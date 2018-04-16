@@ -120,7 +120,7 @@
 										</tileContent>
 									</GenericTile>
 									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>aboutUsTitle}"
-										subheader="{i18n>aboutSubtitle}" press="onNavToFaq">
+										subheader="{i18n>aboutSubtitle}" press="onNavToAboutUs">
 										<tileContent>
 											<TileContent>
 												<content>

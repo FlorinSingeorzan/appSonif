@@ -87,6 +87,9 @@ sap.ui.define([
 		},
 		onNavToFaq : function(){
 			this.getRouter().navTo("faq");
+		},
+		onNavToAboutUs : function(){
+			this.getRouter().navTo("about");
 		}
 	});
 });

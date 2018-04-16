@@ -167,6 +167,11 @@
 					"pattern": "faq",
 					"name": "faq",
 					"target": "faq"
+				},
+				{
+					"pattern": "about",
+					"name": "about",
+					"target": "about"
 				}
 			],
 			"targets": {
@@ -216,6 +221,10 @@
 				"faq": {
 					"viewId": "faq",
 					"viewName": "Faq"
+				},
+				"about": {
+					"viewId": "about",
+					"viewName": "About"
 				}
 			}
 		}
