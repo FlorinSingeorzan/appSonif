@@ -7,10 +7,7 @@
 		showHeader="false"
 		backgroundDesign="Solid">
 		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
-		<Toolbar>
-			<Label text="{i18n>layoutSwitchLabel}" />
-			<Switch change="onHorizontalSwitchChange" />
-		</Toolbar>
+		
 		<suite:Timeline
 			id="timeline"
 			enableDoubleSided="true"

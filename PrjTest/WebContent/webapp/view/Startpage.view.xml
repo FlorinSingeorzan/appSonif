@@ -2,7 +2,7 @@
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
 	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart"  xmlns:html="http://www.w3.org/1999/xhtml">
 	<Shell>
-	<app>
+	<App>
 			<Page showHeader="false" backgroundDesign="Info" >
 				<Panel>	<!-- expandable="{device>/system/phone}" expanded="{= !${device>/system/phone} 
 						}" -->
@@ -129,6 +129,16 @@
 											</TileContent>
 										</tileContent>
 									</GenericTile>
+									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>mastersTitle}"
+										press="onNavToMasters">
+										<tileContent>
+											<TileContent>
+												<content>
+													<ImageContent src="sap-icon://toaster-top" />
+												</content>
+											</TileContent>
+										</tileContent>
+									</GenericTile>
 								</layout:HorizontalLayout>
 							</FlexBox>
 
@@ -148,6 +158,6 @@
 				</FlexBox>
 
 			</Page>
-</app>
+</App>
 </Shell>
 </mvc:View>

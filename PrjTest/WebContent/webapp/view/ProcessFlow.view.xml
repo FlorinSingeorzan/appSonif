@@ -10,15 +10,8 @@
 						labelSpanM="6"
 						editable="true"
 						layout="ResponsiveGridLayout">
-				<Label text="Shrink carousel container" />
-				<Slider value="5"
-						liveChange="onSliderMoved"
-						width="320px"
-						step="1"
-						min="1"
-						max="5"/>
 			</f:SimpleForm>
-				<Panel id="carouselContainer" height="650px">
+				<Panel id="carouselContainer" height="500px">
 					<Carousel class="sapUiContentPadding" loop="true" id="carouselSample" >
 					</Carousel>
 				</Panel>

@@ -172,6 +172,11 @@
 					"pattern": "about",
 					"name": "about",
 					"target": "about"
+				},
+				{
+					"pattern": "masters",
+					"name": "masters",
+					"target": "masters"
 				}
 			],
 			"targets": {
@@ -225,6 +230,10 @@
 				"about": {
 					"viewId": "about",
 					"viewName": "About"
+				},
+				"masters": {
+					"viewId": "masters",
+					"viewName": "Masters"
 				}
 			}
 		}
