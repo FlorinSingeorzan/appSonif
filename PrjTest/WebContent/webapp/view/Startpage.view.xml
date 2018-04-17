@@ -47,7 +47,7 @@
 									</GenericTile>
 									<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" header="{i18n>startpagePFTileTitle}"
 										press="onNavToProcessFlow" frameType="TwoByOne" backgroundImage="images/minb.jpg"> 	
-										<tileContent footer="slide">
+										<tileContent >
 											<TileContent>
 												
 											</TileContent>
