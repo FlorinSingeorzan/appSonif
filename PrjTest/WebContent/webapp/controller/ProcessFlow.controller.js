@@ -20,11 +20,7 @@ sap.ui.define([
 			// set the possible screen sizes
 			var oCarouselContainer = {
 				screenSizes : [
-					"350px",
-					"420px",
-					"555px",
-					"743px",
-					"908px"
+					
 				]
 			};
 			var oScreenSizesModel = new JSONModel(oCarouselContainer);
@@ -138,11 +134,9 @@ sap.ui.define([
 						});
 						oCarousel.addPage(img);
 					}
-				
 			}
 		},
-
-
+		
 		onExit: function () {
 			if (this.oQuickView) {
 				this.oQuickView.destroy();
@@ -151,3 +145,4 @@ sap.ui.define([
 		
 	});
 });
+

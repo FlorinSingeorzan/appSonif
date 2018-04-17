@@ -15,7 +15,6 @@ sap.ui.define([
 		},
 		navHome: function(){
 			this.getOwnerComponent().getRouter().navTo("home");
-//			window.location.reload();
 		},
 
 		getProgress: function(aNodes) {
@@ -90,6 +89,9 @@ sap.ui.define([
 		},
 		onNavToAboutUs : function(){
 			this.getRouter().navTo("about");
+		},
+		onNavToMasters : function(){
+			this.getRouter().navTo("masters");
 		}
 	});
 });
