@@ -15,8 +15,8 @@
 						<layout:VerticalLayout width="auto" class="sapUiResponsiveMargin" allowWrapping="true">
 							<FlexBox displayInline="true"  justifyContent="Center" width="auto" height="auto" class="sapUiNoMarginBottom" >
 								<layout:HorizontalLayout
-									class="sapUiTinyMarginBegin sapUiTinyMarginTop" allowWrapping="true">
-									<SlideTile class="sapUiTinyMarginEnd " tiles="{news>/News}">
+									class="sapUiTinyMarginBegin" allowWrapping="true">
+									<SlideTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" tiles="{news>/News}">
 										<GenericTile backgroundImage="{news>image}" state="{news>state}"
 											frameType="TwoByOne" press="onNavToNewsFeed">
 											<tileContent>
@@ -34,8 +34,8 @@
 												</TileContent>
 											</tileContent>
 										</GenericTile>
-									</SlideTile><GenericTile class="sapUiTinyMarginEnd " header="{i18n>startpageCurrencyTitle}"
-										press="onNavToCurrency">
+									</SlideTile><GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" header="{i18n>startpageCurrencyTitle}"
+										press="onNavToCurrency" frameType="TwoByOne">
 										<tileContent>
 											<TileContent>
 												<content>
@@ -45,18 +45,16 @@
 											</TileContent>
 										</tileContent>
 									</GenericTile>
-									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>startpagePFTileTitle}"
-										press="onNavToProcessFlow">
-										<tileContent>
+									<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" header="{i18n>startpagePFTileTitle}"
+										press="onNavToProcessFlow" frameType="TwoByOne" backgroundImage="images/minb.jpg"> 	
+										<tileContent footer="slide">
 											<TileContent>
-												<content>
-														<ImageContent src="sap-icon://factory" />
-												</content>
+												
 											</TileContent>
 										</tileContent>
 									</GenericTile>
 
-									<GenericTile class="sapUiTinyMarginEnd "
+									<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
 										header="{i18n>startpageUserReviewsTileTitle}" press="onNavToReviews">
 										<tileContent>
 											<TileContent>
@@ -72,7 +70,7 @@
 										</tileContent>
 									</GenericTile>
 
-									<GenericTile class="sapUiTinyMarginEnd "
+									<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop"
 										header="{i18n>startpageTestResultsTileTitle}" subheader="{i18n>startpageTestResultsTileSubTitle}"
 										press="onNavToChartContainer">
 										<tileContent>
@@ -83,7 +81,7 @@
 											</TileContent>
 										</tileContent>
 									</GenericTile>
-									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>startpageMarket}"
+									<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" header="{i18n>startpageMarket}"
 										subheader="{i18n>startpagePercent}" press="onNavToMarket">
 										<tileContent>
 											<TileContent>
@@ -93,7 +91,7 @@
 											</TileContent>
 										</tileContent>
 									</GenericTile>
-									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>convertor}"
+									<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" header="{i18n>convertor}"
 										subheader="{i18n>convertorCalculator}" press="onNavToConvertor">
 										<tileContent>
 											<TileContent>
@@ -103,7 +101,7 @@
 											</TileContent>
 										</tileContent>
 									</GenericTile>
-									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>faqTitle}"
+									<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" header="{i18n>faqTitle}"
 										subheader="{i18n>faqSubtitle}" press="onNavToFaq">
 										<tileContent>
 											<TileContent>
@@ -113,7 +111,7 @@
 											</TileContent>
 										</tileContent>
 									</GenericTile>
-									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>aboutUsTitle}"
+									<GenericTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" header="{i18n>aboutUsTitle}"
 										subheader="{i18n>aboutSubtitle}" press="onNavToAboutUs">
 										<tileContent>
 											<TileContent>
