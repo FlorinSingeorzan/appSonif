@@ -1,18 +1,21 @@
 <mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
 	xmlns:layout="sap.ui.layout" xmlns:suite="sap.suite.ui.commons"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
 	controllerName="sap.suite.ui.commons.PrjTest.controller.Masters"
 	displayBlock="true">
 		
-	<Page id="masters" initialDetail="detailJack" initialMaster="masterJack" orientationChange="onOrientationChange">
+	<Page id="masters" initialDetail="detailJack" initialMaster="masterJack" orientationChange="onOrientationChange" showHeader="false">
 	<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
 	<content>
-		<detailPages>
-		
-			<Page id="detailJack" title="Jack Schwager" class="sapUiStdPage">
+	
+			<Page id="master" title="Masters" icon="sap-icon://action" class="sapUiStdPage">
 				<content>
-					<Label text="Details about Jack Schwager" />
-					<image src="images/Laurent_Dunois.png"/>
-					<Button text="Go to Detail page 2" press="onPressNavToDetailJack" />
+					<List>
+						<items>
+							<StandardListItem title="To Steve" type="Navigation" press="onPressGoToSteve"/>
+							<StandardListItem title="To Jack" type="Navigation" press="onPressGoToJack"/>
+						</items>
+					</List>
 				</content>
 			</Page>
 			
@@ -25,16 +28,6 @@
 				</content>
 			</Page>
 			
-			<Page id="detailSteve" title="Steve Nison" class="sapUiStdPage" showNavButton="true"
-					navButtonText="Back" navButtonPress="onPressDetailBack">
-
-				<content>
-					<Label text="Details about Steve Nison" />
-					<image src="images/Richard_Wilson.png"/>
-					<Button text="Go to Detail page 2" press="onPressNavToDetailSteve" />
-				</content>
-			</Page>
-			
 			<Page id="detailsSteve" title="About Steve" class="sapUiStdPage" showNavButton="true"
 					navButtonText="Back" navButtonPress="onPressDetailBack">
 				<content>
@@ -43,45 +36,7 @@
 					</VBox>
 				</content>
 			</Page>
-			
-		</detailPages>
 		
-		<masterPages>
-			<Page id="master" title="Masters" icon="sap-icon://action" class="sapUiStdPage">
-				<content>
-					<List>
-						<items>
-							<StandardListItem title="To Steve" type="Navigation" press="onPressGoToSteve"/>
-							<StandardListItem title="To Jack" type="Navigation" press="onPressGoToJack"/>
-						</items>
-					</List>
-				</content>
-			</Page>
-			
-			<Page id="masterJack" title="Jack Schwager" icon="sap-icon://action" class="sapUiStdPage" showNavButton="true"
-					navButtonPress="onPressMasterBack">
-				<content>
-					<List itemPress="onListItemPress">
-						<items>
-							<StandardListItem title="To Details about Jack" type="Active" />
-							<StandardListItem title="To Details about Jack part 2" type="Active" />
-						</items>
-					</List>
-				</content>
-			</Page>
-			
-			<Page id="masterSteve" title="Steve Nison" icon="sap-icon://action" class="sapUiStdPage" showNavButton="true"
-					navButtonPress="onPressMasterBack">
-				<content>
-					<List itemPress="onListItemPress">
-						<items>
-							<StandardListItem title="To Detail about Steve" type="Active" />
-							<StandardListItem title="To Details about Steve part 2" type="Active" />
-						</items>
-					</List>
-				</content>
-			</Page>
-		</masterPages>
 		</content>
 </Page>
 </mvc:View>

@@ -6,11 +6,7 @@ sap.ui.define([
 	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.Masters", {
 	
 	onInit: function(){
-		this.getSplitAppObj().setHomeIcon({
-			'phone':'phone-icon.png',
-			'tablet':'tablet-icon.png',
-			'icon':'desktop.ico'
-		});
+		
 	},
 
 	onOrientationChange: function(oEvent) {
@@ -36,11 +32,11 @@ sap.ui.define([
 	},
 
 	onPressGoToSteve : function() {
-		this.getSplitAppObj().toMaster(this.createId("masterSteve"));
+		this.createId("masterSteve");
 	},
 	
 	onPressGoToJack : function() {
-		this.getSplitAppObj().toMaster(this.createId("masterJack"));
+		this.createId("masterJack");
 	},
 
 	onListItemPress : function(oEvent) {

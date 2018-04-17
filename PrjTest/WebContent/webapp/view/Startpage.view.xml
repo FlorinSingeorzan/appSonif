@@ -34,8 +34,7 @@
 												</TileContent>
 											</tileContent>
 										</GenericTile>
-									</SlideTile>
-									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>startpageCurrencyTitle}"
+									</SlideTile><GenericTile class="sapUiTinyMarginEnd " header="{i18n>startpageCurrencyTitle}"
 										press="onNavToCurrency">
 										<tileContent>
 											<TileContent>
@@ -51,12 +50,7 @@
 										<tileContent>
 											<TileContent>
 												<content>
-													<NumericContent scale="%"
-														value="{
-													path: 'process>/Nodes',
-													formatter: '.getProgress'
-												}"
-														icon="sap-icon://factory" />
+														<ImageContent src="sap-icon://factory" />
 												</content>
 											</TileContent>
 										</tileContent>
@@ -129,16 +123,7 @@
 											</TileContent>
 										</tileContent>
 									</GenericTile>
-									<GenericTile class="sapUiTinyMarginEnd " header="{i18n>mastersTitle}"
-										press="onNavToMasters">
-										<tileContent>
-											<TileContent>
-												<content>
-													<ImageContent src="sap-icon://toaster-top" />
-												</content>
-											</TileContent>
-										</tileContent>
-									</GenericTile>
+									
 								</layout:HorizontalLayout>
 							</FlexBox>
 
