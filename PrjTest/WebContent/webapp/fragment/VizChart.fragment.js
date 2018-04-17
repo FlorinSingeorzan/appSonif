@@ -13,8 +13,8 @@ sap.ui.define([
 		createContent: function(controller) {
 
 			var oVizFrame = new VizFrame({
-				height: "700px",
-				width: "100%",
+				height: "450px",
+				width: "60%",
 				vizType: "vertical_bullet",
 				uiConfig: {
 					applicationSet: 'fiori'

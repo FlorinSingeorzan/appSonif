@@ -13,7 +13,7 @@ sap.ui.define([
 		createContent: function(controller) {
 
 			var oVizFrame = new VizFrame({
-				height: "700px",
+				height: "450px",
 				width: "100%",
 				vizType: "line",
 				uiConfig: {
