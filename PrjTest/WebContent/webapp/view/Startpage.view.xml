@@ -17,7 +17,7 @@
 								<layout:HorizontalLayout
 									class="sapUiTinyMarginBegin" allowWrapping="true">
 									<SlideTile class="sapUiTinyMarginEnd sapUiTinyMarginTop" tiles="{news>/News}">
-										<GenericTile backgroundImage="{news>image}" state="{news>state}"
+										<GenericTile backgroundImage="{news>image}" class="tileStyle"
 											frameType="TwoByOne" press="onNavToNewsFeed">
 											<tileContent>
 												<TileContent

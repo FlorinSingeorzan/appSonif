@@ -2,7 +2,6 @@
 	"News": [
 		{
 			"content": "The best value!",
-			"title": "test",
 			"source": "Guardian",
 			"date": "2017-12-08",
 			"image": "images/bitcoin.jpg",
@@ -33,7 +32,7 @@
 			"content": "Making Sense of the World's Cryptocurrency Rules",
 			"source": "bloomberg.com",
 			"date": "2018-03-20",
-			"image": "images/bitcoinBloomberg.png",
+			"image": "images/bitcoinBloomberg.jpg",
 			"text": "Getting your head around cryptocurrencies was hard enough before governments got involved. But now that policy makers around the world are drawing up fresh regulations on everything from exchanges to initial coin offerings, keeping track of what's legal has become just as daunting as figuring out which newfangled token might turn into the next Bitcoin. The rules can vary wildly by country, given a lack of global coordination among authorities. And while that may change after finance chiefs discuss digital assets at the Group of 20 meeting in Buenos Aires this week, for the time being there's a wide range of opinions on how best to regulate the space. Below is a rundown of what major countries are doing now. Most of the world's cryptocurrency trading takes place in this tech-savvy region, with Japan playing a dominant role after it introduced a licensing system for digital-asset exchanges last year. In Hong Kong, regulators have adopted a more hands-off approach while at the same time warning crypto platforms to refrain from trading anything that qualifies as a security without permission. Singapore's deputy prime minister has called cryptocurrencies an 'experiment,' adding that he doesn't see a strong case to ban trading. Taiwan authorities are taking a wait-and-see approach, while the Philippines plans to roll out rules for ICOs by year-end. China, once a global hub for cryptocurrency trading, now leads the world in cracking down. It has outlawed digital-asset exchanges and ICOs, blocked online access to overseas trading platforms and cut off power to Bitcoin miners. South Korea, which became a hotbed of cryptocurrency activity last year, is also tightening oversight as it works on a comprehensive set of regulations, though it has allowed exchanges to keep operating for now. In India, where crypto-mania has been relatively subdued, the government has said it doesn't consider digital currencies to be legal tender and will take measures to curb their use. Most cryptocurrency trading in the U.S. takes place in a legal gray area, a point highlighted by the nation's two top market watchdogs in testimony to Congress in February. Still, the Securities and Exchange Commission has been scrutinizing everything from ICOs to cryptocurrency hedge funds and trading venues. How exactly it plans to crack down on the industry remains to be seen. In Canada, regulators have said that ICOs may be treated as securities and that products linked to cryptocurrencies should be considered high-risk. At the same time, the country's stock exchanges have become popular destinations for crypto-related stocks and exchange-traded funds. Brazil's market regulator, meanwhile, has barred funds from investing in cryptocurrencies because they aren't classified as financial"
 		}
 	]
