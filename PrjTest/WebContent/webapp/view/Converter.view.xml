@@ -9,12 +9,17 @@
 		<Panel class="sapUiNoContentPadding">
 		<content>
 			
-					<Input id="dollar" type="Number" liveChange="dollarChange"
-						width="50%" valueLiveUpdate="true" placeholder="Dollar" />	
+					
 					<Input id="bitcoin" type="Number" liveChange="bitcoinChange"
 						width="50%" valueLiveUpdate="true" placeholder="Bitcoin" />
 					<Input id="ethereum" type="Number" liveChange="ethereumChange"
-						width="100%" valueLiveUpdate="true" placeholder="Ethereum" />
+						width="50%" valueLiveUpdate="true" placeholder="Ethereum" />
+					<Input id="iota" type="Number" liveChange="iotaChange"
+						width="50%" valueLiveUpdate="true" placeholder="IOTA" />	
+					<Input id="ripple" type="Number" liveChange="rippleChange"
+						width="50%" valueLiveUpdate="true" placeholder="Ripple" />
+					<Input id="dollar" type="Number" liveChange="dollarChange"
+						width="100%" valueLiveUpdate="true" placeholder="Dollar" />	
 		</content>
 		</Panel>
 	</Page>
