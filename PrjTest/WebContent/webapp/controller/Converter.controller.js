@@ -5,9 +5,12 @@ sap.ui.define([
 	"sap/ui/core/format/NumberFormat"
 ], function(Controller, MessageToast, JSONModel, NumberFormat) {    //tine cont de ordinea de sus
 	"use strict";
-
+	var singleCall=1;
 	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.Converter", {
+
+	
 		onInit: function() {  
+			var pes="hunn";
 		},
 		dollarChange: function (oEvent) {
 			var dollar= this.byId("dollar").getValue();
@@ -43,6 +46,22 @@ sap.ui.define([
 			this.byId("bitcoin").setValue(ripple*0.000085);
 			this.byId("iota").setValue(ripple*0.425);
 			this.byId("ethereum").setValue(ripple*0.00134);
+		},
+		eth:function(){
+			if (singleCall==1){
+				var calle=ethereum();
+			}
+			
+			if (singleCall==2){
+				var calle=bitcoin();
+			}
+			if (singleCall==3){
+				this.byId("coin").rerender();
+				singleCall=0;
+			}
+			singleCall++;
 		}
+		
+		
 	});
 });  

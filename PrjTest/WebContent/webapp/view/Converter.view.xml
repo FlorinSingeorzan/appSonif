@@ -9,7 +9,6 @@
 		<Panel class="sapUiNoContentPadding">
 		<content>
 			
-					
 					<Input id="bitcoin" type="Number" liveChange="bitcoinChange"
 						width="50%" valueLiveUpdate="true" placeholder="Bitcoin" />
 					<Input id="ethereum" type="Number" liveChange="ethereumChange"
@@ -20,6 +19,12 @@
 						width="50%" valueLiveUpdate="true" placeholder="Ripple" />
 					<Input id="dollar" type="Number" liveChange="dollarChange"
 						width="100%" valueLiveUpdate="true" placeholder="Dollar" />	
+						<Button text="Update" press="eth"></Button>
+						<FlexBox id="coin"  displayInline="true"  justifyContent="Center" width="500px" height="auto" >
+					<xhtml:script xmlns:xhtml="http://www.w3.org/1999/xhtml"
+		                src="bitcoin.js"
+		                type="application/javascript"></xhtml:script>
+		                </FlexBox>
 		</content>
 		</Panel>
 	</Page>
