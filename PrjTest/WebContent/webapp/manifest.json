@@ -177,6 +177,11 @@
 					"pattern": "masters",
 					"name": "masters",
 					"target": "masters"
+				},
+				{
+					"pattern": "vcurrency",
+					"name": "vcurrency",
+					"target": "vcurrency"
 				}
 			],
 			"targets": {
@@ -234,6 +239,10 @@
 				"masters": {
 					"viewId": "masters",
 					"viewName": "Masters"
+				},
+				"vcurrency": {
+					"viewId": "vcurrency",
+					"viewName": "VCurrency"
 				}
 			}
 		}

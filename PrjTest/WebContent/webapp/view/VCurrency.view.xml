@@ -1,0 +1,54 @@
+<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.VCurrency"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
+
+	<Page showHeader="false" backgroundDesign="Info">
+		<!-- <subHeader class="subHeaderDesign"> -->
+		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<!-- </subHeader> -->
+		<content>
+			<HBox>
+				<items>
+					<VBox>
+						<items>
+							<HBox width="100%" wrap="Wrap">
+
+								<items>
+
+									<GenericTile class="sapUiTinyMarginBegin sapUiMediumMarginTop"
+										backgroundImage="images/btc.png" press="eth"></GenericTile>
+									<GenericTile class="sapUiTinyMarginBegin  sapUiMediumMarginTop"
+										backgroundImage="images/eth.png" press="eth"></GenericTile>
+									<GenericTile class="sapUiTinyMarginBegin  sapUiMediumMarginTop"
+										backgroundImage="images/xrp.png" press="eth"></GenericTile>
+									<GenericTile class="sapUiTinyMarginBegin  sapUiMediumMarginTop"
+										backgroundImage="images/eos.png" press="eth"></GenericTile>
+									<GenericTile class="sapUiTinyMarginBegin  sapUiMediumMarginTop"
+										backgroundImage="images/ltc.png" press="eth"></GenericTile>
+
+								</items>
+
+							</HBox>
+							<HBox width="100%" direction="Column" id="__vbox0">
+								<items>
+									<GenericTile
+										class="sapUiTinyMarginBegin sapUiTinyMarginEnd sapUiMediumMarginTop"
+										backgroundImage="images/btc.png" press="eth"></GenericTile>
+									<GenericTile
+										class="sapUiTinyMarginBegin sapUiTinyMarginEnd sapUiMediumMarginTop"
+										backgroundImage="images/eth.png" press="eth"></GenericTile>
+								</items>
+							</HBox>
+
+						</items>
+					</VBox>
+					<FlexBox id="coin" class="sapUiMediumMargin	"
+						displayInline="true" justifyContent="Center" width="500px" height="auto">
+						<html:script src="bitcoin.js" type="application/javascript"></html:script>
+					</FlexBox>
+				</items>
+			</HBox>
+		</content>
+	</Page>
+
+</mvc:View>
