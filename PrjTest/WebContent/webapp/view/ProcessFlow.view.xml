@@ -11,7 +11,7 @@
 						editable="true"
 						layout="ResponsiveGridLayout">
 			</f:SimpleForm>
-				<Panel id="carouselContainer" height="500px">
+				<Panel id="carouselContainer" height="600px">
 					<Carousel class="sapUiContentPadding" loop="true" id="carouselSample" >
 					</Carousel>
 				</Panel>

@@ -11,11 +11,19 @@ sap.ui.define([
 
 	return sap.ui.jsfragment("sap.suite.ui.commons.PrjTest.fragment.VizChart", {
 		createContent: function(controller) {
-
+			//added
+//			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/PrjTestData.json");
+//			var oModel = new JSONModel(sDataPath);		//sDataPath
+			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?format=json");		//sDataPath
+			oModel.setSizeLimit(500);
+			//console.log(oModel);
+			controller.getView().setModel(oModel,"all");
+			//added
+			
 			var oVizFrame = new VizFrame({
 				height: "450px",
 				width: "60%",
-				vizType: "vertical_bullet",
+				vizType: "line",
 				uiConfig: {
 					applicationSet: 'fiori'
 				}
@@ -23,20 +31,21 @@ sap.ui.define([
 			
 			var oDataset = new FlattenedDataset({
 				dimensions: new DimensionDefinition({
-					name: "Bitcoin evolution in 2017",
-					value: "{month}"
+					name: "Bitcoin evolution",
+					value: "{y}"
 				}),
 				measures: [
 					new MeasureDefinition({
 						name: "Maximum values",
-						value: "{value}"
+						value: "{y}"
 					})
 				],
-				data: "{/Values}"
+				data: "{all>/values}"
 			});
 			
 			oVizFrame.setDataset(oDataset);
-
+			console.log(oDataset);
+			
 			oVizFrame.addFeed(new FeedItem({
 				uid: "valueAxis",
 				type: "Measure",
@@ -46,7 +55,7 @@ sap.ui.define([
 			oVizFrame.addFeed(new FeedItem({
 				uid: "categoryAxis",
 				type: "Dimension",
-				values: [ "Bitcoin evolution in 2017" ]
+				values: [ "Bitcoin evolution" ]
 			}));
 
 			oVizFrame.setVizProperties({
@@ -61,11 +70,13 @@ sap.ui.define([
 						text: controller.getOwnerComponent().getModel("i18n").getResourceBundle().getText("chartContainerBitcoinValues")
 					}
 				}
+				
 			});
 			
-			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/PrjTestData.json");
-			var oModel = new JSONModel(sDataPath);
-			controller.getView().setModel(oModel);
+			//var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/PrjTestData.json");
+//			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?format=json");		//sDataPath
+//			console.log(oModel);
+//			controller.getView().setModel(oModel);
 
 			return oVizFrame;
 		}

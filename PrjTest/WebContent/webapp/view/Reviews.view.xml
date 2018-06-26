@@ -17,12 +17,12 @@
 			content="{reviews>/UserReviews}"
 			textHeight="automatic"
 			showHeaderBar="false">
-			<suite:TimelineItem
+			<!--next section before title 	userPicture="{=!${reviews>template} ? ${reviews>userPic} : null}"  -->
+			<suite:TimelineItem 
 				dateTime="{
 					path: 'reviews>date',
 					formatter: '.formatDateTime'
 				}"
-				userPicture="{=!${reviews>template} ? ${reviews>userPic} : null}"
 				title="{=!${reviews>template} ? ${reviews>user} : null}"
 				text="{=!${reviews>template} ? ${reviews>quote} : null}"
 				filterValue="{=!${reviews>template} ? ${reviews>rating} : null}">

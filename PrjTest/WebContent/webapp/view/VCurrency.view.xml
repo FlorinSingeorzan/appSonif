@@ -9,20 +9,20 @@
 		<content>
 			<HBox>
 				<items>
-					<VBox>
+					<VBox width="auto" wrap="Wrap">
 						<items>
 							<HBox width="auto" wrap="Wrap">
 
 								<items>
 
 									<GenericTile class="sapUiSmallMarginBegin sapUiMediumMarginTop"
-										backgroundImage="images/btc.png" press="eth"></GenericTile>
+										backgroundImage="images/btc.png" press="btc"></GenericTile>
 									<GenericTile class="sapUiSmallMarginBegin  sapUiMediumMarginTop"
 										backgroundImage="images/eth.png" press="eth"></GenericTile>
 									<GenericTile class="sapUiSmallMarginBegin  sapUiMediumMarginTop"
-										backgroundImage="images/xrp.png" press="eth"></GenericTile>
+										backgroundImage="images/xrp.png" press="xrp"></GenericTile>
 									<GenericTile class="sapUiSmallMarginBegin  sapUiMediumMarginTop"
-										backgroundImage="images/eos.png" press="eth"></GenericTile>
+										backgroundImage="images/eos.png" press="eos"></GenericTile>
 
 								</items>
 
@@ -32,26 +32,26 @@
 									<HBox wrap="Wrap">
 										<items>
 											<GenericTile class="sapUiSmallMarginBegin sapUiMediumMarginTop"
-												backgroundImage="images/iota.png" press="eth"></GenericTile>
+												backgroundImage="images/iota.png" press="iota"></GenericTile>
 											<GenericTile class="sapUiSmallMarginBegin sapUiMediumMarginTop"
-												backgroundImage="images/neo.png" press="eth"></GenericTile>
+												backgroundImage="images/neo.png" press="neo"></GenericTile>
 											<GenericTile class="sapUiSmallMarginBegin sapUiMediumMarginTop"
-												backgroundImage="images/xmr.png" press="eth"></GenericTile>
+												backgroundImage="images/xmr.png" press="xmr"></GenericTile>
 											<GenericTile class="sapUiSmallMarginBegin sapUiMediumMarginTop"
-												backgroundImage="images/dash.png" press="eth"></GenericTile>
+												backgroundImage="images/dash.png" press="dash"></GenericTile>
 										</items>
 									</HBox>
 									<HBox wrap="Wrap">
 										<items>
 											<GenericTile
 												class="sapUiSmallMarginBegin sapUiMediumMarginTop"
-												backgroundImage="images/trx.jpg" press="eth"></GenericTile>
+												backgroundImage="images/trx.jpg" press="trx"></GenericTile>
 											<GenericTile class="sapUiSmallMarginBegin  sapUiMediumMarginTop"
-												backgroundImage="images/ltc.png" press="eth"></GenericTile>
+												backgroundImage="images/ltc.png" press="ltc"></GenericTile>
 											<GenericTile class="sapUiSmallMarginBegin  sapUiMediumMarginTop"
-												backgroundImage="images/zec.png" press="eth"></GenericTile>
+												backgroundImage="images/zec.png" press="zec"></GenericTile>
 											<GenericTile class="sapUiSmallMarginBegin  sapUiMediumMarginTop"
-												backgroundImage="images/bch.png" press="eth"></GenericTile>
+												backgroundImage="images/bch.png" press="bth"></GenericTile>
 										</items>
 									</HBox>
 								</items>
@@ -59,9 +59,9 @@
 
 						</items>
 					</VBox>
-					<FlexBox id="coin" class="sapUiMediumMarginTop"
-						displayInline="true" justifyContent="Center" width="500px" height="auto">
-						<html:script src="bitcoin.js" type="application/javascript"></html:script>
+					<FlexBox id="coin" class="sapUiMediumMarginTop sapUiMediumMarginBegin"
+						 direction="Column" justifyContent="Start" width="700px" height="auto">
+						<html:script  src="controller/bitcoin.js" type="application/javascript"></html:script>
 					</FlexBox>
 				</items>
 			</HBox>

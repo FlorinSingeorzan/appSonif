@@ -43,7 +43,7 @@
 			"type": "XML"
 		},
 		"dependencies": {
-			"minUI5Version": "1.50.0",
+			"minUI5Version": "1.54.0",
 			"libs": {
 				"sap.ui.core": {
 					
@@ -83,10 +83,6 @@
 			"business": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/data/BusinessData.json"
-			},
-			"suppliers": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/data/Suppliers.json"
 			},
 			"reviews": {
 				"type": "sap.ui.model.json.JSONModel",
@@ -174,11 +170,6 @@
 					"target": "about"
 				},
 				{
-					"pattern": "masters",
-					"name": "masters",
-					"target": "masters"
-				},
-				{
 					"pattern": "vcurrency",
 					"name": "vcurrency",
 					"target": "vcurrency"
@@ -235,10 +226,6 @@
 				"about": {
 					"viewId": "about",
 					"viewName": "About"
-				},
-				"masters": {
-					"viewId": "masters",
-					"viewName": "Masters"
 				},
 				"vcurrency": {
 					"viewId": "vcurrency",

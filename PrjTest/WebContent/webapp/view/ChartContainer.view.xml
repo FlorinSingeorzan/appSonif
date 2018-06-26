@@ -53,7 +53,7 @@
 					icon="sap-icon://table-chart"
 					title="{i18n>chartContainerTableContentTitle}">
 					<suite:content>
-						<Table items="{/Values}">
+						<Table id="valueTable" items="{all>/values}">
 							<columns>
 								<Column>
 									<Text text="{i18n>chartContainerPrjTestMonth}" />
@@ -65,8 +65,8 @@
 							<items>
 								<ColumnListItem>
 									<cells>
-										<Text text="{month}" />
-										<Text text="{value}" />
+										<Text text="{all>y}" />
+										<Text text="{all>unit}" />
 									</cells>
 								</ColumnListItem>
 							</items>
