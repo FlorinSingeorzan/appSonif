@@ -5,8 +5,9 @@ sap.ui.define([
 	"sap/viz/ui5/data/DimensionDefinition",
 	"sap/viz/ui5/data/MeasureDefinition",
 	"sap/viz/ui5/controls/common/feeds/FeedItem",
+	'sap/viz/ui5/format/ChartFormatter',
 	"sap/ui/model/json/JSONModel"
-], function(jQuery, VizFrame, FlattenedDataset, DimensionDefinition, MeasureDefinition, FeedItem, JSONModel) {
+], function(jQuery, VizFrame, FlattenedDataset, DimensionDefinition, MeasureDefinition, FeedItem,ChartFormatter, JSONModel) {
 	"use strict";
 
 	return sap.ui.jsfragment("sap.suite.ui.commons.PrjTest.fragment.VizChart", {
@@ -17,13 +18,13 @@ sap.ui.define([
 			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?format=json");		//sDataPath
 			oModel.setSizeLimit(500);
 			//console.log(oModel);
-			controller.getView().setModel(oModel,"all");
+			controller.getView().setModel(oModel,"year");
 			//added
 			
 			var oVizFrame = new VizFrame({
-				height: "450px",
-				width: "60%",
-				vizType: "line",
+				height: "600px",
+				width: "100%",
+				vizType: "column",
 				uiConfig: {
 					applicationSet: 'fiori'
 				}
@@ -31,8 +32,11 @@ sap.ui.define([
 			
 			var oDataset = new FlattenedDataset({
 				dimensions: new DimensionDefinition({
-					name: "Bitcoin evolution",
-					value: "{y}"
+					name: "Bitcoin evolution: 1 year",
+					value:{
+				          path:'x',
+				          formatter: controller.formatJSONDate
+				              }
 				}),
 				measures: [
 					new MeasureDefinition({
@@ -40,11 +44,10 @@ sap.ui.define([
 						value: "{y}"
 					})
 				],
-				data: "{all>/values}"
+				data: "{year>/values}"
 			});
 			
 			oVizFrame.setDataset(oDataset);
-			console.log(oDataset);
 			
 			oVizFrame.addFeed(new FeedItem({
 				uid: "valueAxis",
@@ -55,17 +58,31 @@ sap.ui.define([
 			oVizFrame.addFeed(new FeedItem({
 				uid: "categoryAxis",
 				type: "Dimension",
-				values: [ "Bitcoin evolution" ]
+				values: [ "Bitcoin evolution: 1 year" ]
 			}));
 
 			oVizFrame.setVizProperties({
 				plotArea: {
+					 window: {			//fit the content chart
+                         start: "firstDataPoint",
+                         end: "lastDataPoint"
+                     },
+                     dataLabel: {			//for points label *optional
+                         formatString:ChartFormatter.DefaultPattern.SHORTFLOAT,
+                         visible: false
+                     },
 					showGap: true
 				},
+				toolTip : {  
+
+		            visible : false 
+
+		        },
 				title: {
 					visible: false
 				},
 				valueAxis: {
+					
 					title: {
 						text: controller.getOwnerComponent().getModel("i18n").getResourceBundle().getText("chartContainerBitcoinValues")
 					}

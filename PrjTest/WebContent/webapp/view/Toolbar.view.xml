@@ -5,7 +5,10 @@
 		<FlexBox width="auto" height="42px" class="sapUiNoMargin">
 			<Button class="sapUiNoMargin homeButton homeButtonH" icon="sap-icon://co"
 				text="SONIF" type="Emphasized" press="navHome" ariaLabelledBy="editButtonLabel" />
+			
 		</FlexBox>
-
+		<FlexBox width="100%" height="auto" class="sapUiNoMargin" justifyContent="End">
+		<Text text="{actualv>/}" />
+		</FlexBox>
 	</Toolbar>
 </core:View>

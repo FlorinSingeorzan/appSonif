@@ -9,11 +9,16 @@ sap.ui.define([
 ], function(jQuery, VizFrame, FlattenedDataset, DimensionDefinition, MeasureDefinition, FeedItem, JSONModel) {
 	"use strict";
 
-	return sap.ui.jsfragment("sap.suite.ui.commons.PrjTest.fragment.VizChart6", {
+	return sap.ui.jsfragment("sap.suite.ui.commons.PrjTest.fragment.VizChartMonth", {
 		createContent: function(controller) {
-
+			
+			//var sDataPath = jQuery.sap.getModulePath("https://api.blockchain.info/charts/market-price?timespan=30days&format=json");
+			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?timespan=30days&format=json");
+			controller.getView().setModel(oModel,"month");
+			
+			
 			var oVizFrame = new VizFrame({
-				height: "450px",
+				height: "600px",
 				width: "100%",
 				vizType: "line",
 				uiConfig: {
@@ -23,16 +28,19 @@ sap.ui.define([
 			
 			var oDataset = new FlattenedDataset({
 				dimensions: new DimensionDefinition({
-					name: "Bitcoin evolution in 2017",
-					value: "{month}"
+					name: "Bitcoin evolution: Last Month",
+					value: {
+				          path:'x',
+				          formatter: controller.formatJSONDate
+				            }
 				}),
 				measures: [
 					new MeasureDefinition({
 						name: "Maximum values",
-						value: "{value}"
+						value: "{y}"
 					})
 				],
-				data: "{/Values6}"
+				data: "{month>/values}"
 			});
 			
 			oVizFrame.setDataset(oDataset);
@@ -46,7 +54,7 @@ sap.ui.define([
 			oVizFrame.addFeed(new FeedItem({
 				uid: "categoryAxis",
 				type: "Dimension",
-				values: [ "Bitcoin evolution in 2017" ]
+				values: [ "Bitcoin evolution: Last Month" ]
 			}));
 
 			oVizFrame.setVizProperties({
@@ -63,9 +71,6 @@ sap.ui.define([
 				}
 			});
 			
-			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/PrjTestData.json");
-			var oModel = new JSONModel(sDataPath);
-			controller.getView().setModel(oModel);
 
 			return oVizFrame;
 		}
