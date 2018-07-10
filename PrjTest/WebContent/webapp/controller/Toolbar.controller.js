@@ -8,9 +8,19 @@ sap.ui.define([
 
 sap.ui.controller("sap.suite.ui.commons.PrjTest.controller.Toolbar", {
 	onInit: function() {  
-		var oModel = new JSONModel("https://blockchain.info/q/24hrprice");		
+		var oModel = new JSONModel("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD");		
 		this.getView().setModel(oModel,"actualv");
+//		this.updateData ();
+		var th =this;
+		setInterval( function() { th.updateData (); }, 10000 );
 	},
+	updateData: function(){
+		var oModel = new JSONModel("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD");
+		this.getView().setModel(oModel,"actualv");
+		this.byId("avalue").rerender();
+	},
+	
+
 	navHome: function(){
 		this.getOwnerComponent().getRouter().navTo("home");
 	},

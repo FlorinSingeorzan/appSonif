@@ -4,6 +4,11 @@ sap.ui.define([
 ], function(Controller,NumberFormat) {
 	"use strict";
 	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.ChartContainer", {
+		onInit: function(){
+//			var oModel = new sap.ui.model.odata.ODataModel("proxy/http/evolhebhdb.evosoft.com:8010/sap/opu/odata/sap/ZFS_SONIF_SRV",false);
+//			console.log(oModel);
+
+		},
 		onNavButtonPressed: function() {
 			var oRouter = this.getOwnerComponent().getRouter();
 			oRouter.navTo("home");

@@ -24,7 +24,7 @@
 						</suite:content>
 					</suite:ChartContainerContent>
 					<suite:ChartContainerContent icon="sap-icon://appointment-2"
-						title="{i18n>chartContainerBulletChartContentTitle6months}">
+						title="{i18n>chartMonthBtcHistory}">
 						<suite:content>
 							<core:Fragment
 								fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChartMonth"
@@ -32,9 +32,16 @@
 						</suite:content>
 					</suite:ChartContainerContent>
 					<suite:ChartContainerContent icon="sap-icon://vertical-bullet-chart"
-						title="{i18n>chartContainerBulletChartContentTitle}">
+						title="{i18n>chartYearBtcHistory}">
 						<suite:content>
 							<core:Fragment fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChart"
+								type="JS" />
+						</suite:content>
+					</suite:ChartContainerContent>
+					<suite:ChartContainerContent icon="sap-icon://check-availability"
+						title="{i18n>chartAllBtcHistory}">
+						<suite:content>
+							<core:Fragment fragmentName="sap.suite.ui.commons.PrjTest.fragment.BtcChart"
 								type="JS" />
 						</suite:content>
 					</suite:ChartContainerContent>

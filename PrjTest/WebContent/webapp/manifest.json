@@ -8,6 +8,16 @@
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
+		"dataSources": {
+			"Test": {
+				"uri": "proxy/http/evolhebhdb.evosoft.com:8010/sap/opu/odata/sap/ZFS_SONIF_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "proxy/http/evolhebhdb.evosoft.com:8010/sap/opu/odata/sap/ZFS_SONIF_SRV/"
+				}
+			}
+		},
 		"title": "{{title}}",
 		"description": "{{appDescription}}",
 		"resources": "resources.json",
@@ -18,7 +28,7 @@
 		"technology": "UI5",
 		"icons": {
 			"icon": "",
-			"favIcon": "",
+			"favIcon": "images/favicon.ico",
 			"phone": "",
 			"phone@2": "",
 			"tablet": "",
@@ -157,8 +167,7 @@
 					"pattern": "converter",
 					"name": "converter",
 					"target": "converter"
-				}
-				,
+				},
 				{
 					"pattern": "faq",
 					"name": "faq",

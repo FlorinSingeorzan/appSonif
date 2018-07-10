@@ -15,7 +15,7 @@ sap.ui.define([
 			//added
 //			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/PrjTestData.json");
 //			var oModel = new JSONModel(sDataPath);		//sDataPath
-			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?format=json");		//sDataPath
+			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?format=json&cors=true");		//sDataPath
 			oModel.setSizeLimit(500);
 			//console.log(oModel);
 			controller.getView().setModel(oModel,"year");

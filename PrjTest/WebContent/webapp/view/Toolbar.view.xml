@@ -8,7 +8,7 @@
 			
 		</FlexBox>
 		<FlexBox width="100%" height="auto" class="sapUiNoMargin" justifyContent="End">
-		<Text text="{actualv>/}" />
+		<Text id="avalue" text="{actualv>/USD}" />
 		</FlexBox>
 	</Toolbar>
 </core:View>

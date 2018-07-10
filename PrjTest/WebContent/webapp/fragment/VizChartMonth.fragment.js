@@ -13,7 +13,7 @@ sap.ui.define([
 		createContent: function(controller) {
 			
 			//var sDataPath = jQuery.sap.getModulePath("https://api.blockchain.info/charts/market-price?timespan=30days&format=json");
-			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?timespan=30days&format=json");
+			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?timespan=30days&format=json&cors=true");
 			controller.getView().setModel(oModel,"month");
 			
 			
