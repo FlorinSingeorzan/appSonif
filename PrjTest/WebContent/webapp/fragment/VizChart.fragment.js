@@ -10,10 +10,10 @@ sap.ui.define([
 ], function(jQuery, VizFrame, FlattenedDataset, DimensionDefinition, MeasureDefinition, FeedItem,ChartFormatter, JSONModel) {
 	"use strict";
 
-	return sap.ui.jsfragment("sap.suite.ui.commons.PrjTest.fragment.VizChart", {
+	return sap.ui.jsfragment("sap.Sonif.fragment.VizChart", {
 		createContent: function(controller) {
 			//added
-//			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/PrjTestData.json");
+//			var sDataPath = jQuery.sap.getModulePath("sap.Sonif.model.data", "/PrjTestData.json");
 //			var oModel = new JSONModel(sDataPath);		//sDataPath
 			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?format=json&cors=true");		//sDataPath
 			oModel.setSizeLimit(500);
@@ -90,7 +90,7 @@ sap.ui.define([
 				
 			});
 			
-			//var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/PrjTestData.json");
+			//var sDataPath = jQuery.sap.getModulePath("sap.Sonif.model.data", "/PrjTestData.json");
 //			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?format=json");		//sDataPath
 //			console.log(oModel);
 //			controller.getView().setModel(oModel);

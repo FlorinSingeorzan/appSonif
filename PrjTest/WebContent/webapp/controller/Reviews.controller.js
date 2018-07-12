@@ -4,7 +4,7 @@ sap.ui.define([
 ], function(Controller, DateFormat) {
 	"use strict";
 
-	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.Reviews", {
+	return Controller.extend("sap.Sonif.controller.Reviews", {
 		onInit: function() {
 			this.oTimeline = this.byId("timeline");
 		},

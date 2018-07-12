@@ -80,7 +80,7 @@ sap.ui.define([
 			dollar.setValue(value*data.USD);
 		});
 	}
-	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.Converter", {
+	return Controller.extend("sap.Sonif.controller.Converter", {
 		onInit: function() {  
 //			btc_eth=loadConversion("BTC","ETH");
 //			btc_xrp=loadConversion("BTC","XRP");

@@ -1,10 +1,10 @@
-<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.VCurrency"
+<mvc:View controllerName="sap.Sonif.controller.VCurrency"
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
 	xmlns:layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
 
 	<Page showHeader="false" backgroundDesign="Info">
 		<!-- <subHeader class="subHeaderDesign"> -->
-		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<mvc:XMLView viewName="sap.Sonif.view.Toolbar" />
 		<!-- </subHeader> -->
 		<content>
 			<HBox>

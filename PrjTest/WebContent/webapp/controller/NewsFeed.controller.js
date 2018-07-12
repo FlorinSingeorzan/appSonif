@@ -7,9 +7,9 @@ sap.ui.define([
 ], function(jQuery, Controller, MessageToast, JSONModel, NumberFormat) {    //tine cont de ordinea de sus
 	"use strict";
 
-	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.NewsFeed", {
+	return Controller.extend("sap.Sonif.controller.NewsFeed", {
 		onInit: function() {
-			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/News.json");
+			var sDataPath = jQuery.sap.getModulePath("sap.Sonif.model.data", "/News.json");
 			var oModel = new JSONModel(sDataPath);
 			this.getView().setModel(oModel, "news");
 		},

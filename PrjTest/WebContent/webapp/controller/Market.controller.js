@@ -6,7 +6,7 @@ sap.ui.define([
 ], function(Controller, MessageToast, JSONModel, NumberFormat) {    //tine cont de ordinea de sus
 	"use strict";
 
-	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.Market", {
+	return Controller.extend("sap.Sonif.controller.Market", {
 		onInit: function() {  
 		
 		},

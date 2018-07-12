@@ -2,11 +2,11 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:suite="sap.suite.ui.commons"
-	controllerName="sap.suite.ui.commons.PrjTest.controller.Reviews">
+	controllerName="sap.Sonif.controller.Reviews">
 	<Page
 		showHeader="false"
 		backgroundDesign="Solid">
-		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<mvc:XMLView viewName="sap.Sonif.view.Toolbar" />
 		
 		<suite:Timeline
 			id="timeline"

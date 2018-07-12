@@ -6,7 +6,7 @@ sap.ui.define([
 ], function(Controller, MessageToast, JSONModel, NumberFormat) {    //tine cont de ordinea de sus
 	"use strict";
 
-sap.ui.controller("sap.suite.ui.commons.PrjTest.controller.Toolbar", {
+sap.ui.controller("sap.Sonif.controller.Toolbar", {
 	onInit: function() {  
 		var oModel = new JSONModel("https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD");		
 		this.getView().setModel(oModel,"actualv");

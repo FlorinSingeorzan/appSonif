@@ -1,12 +1,28 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/format/NumberFormat"
-], function(Controller,NumberFormat) {
+	"sap/ui/core/format/NumberFormat",
+	"sap/ui/model/json/JSONModel",
+	'sap/m/Dialog',
+	'sap/m/Button',
+	'sap/m/Text'
+	
+], function(Controller,NumberFormat,JSONModel,Dialog,Button,Text) {
 	"use strict";
-	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.ChartContainer", {
+	return Controller.extend("sap.Sonif.controller.ChartContainer", {
 		onInit: function(){
-//			var oModel = new sap.ui.model.odata.ODataModel("proxy/http/evolhebhdb.evosoft.com:8010/sap/opu/odata/sap/ZFS_SONIF_SRV",false);
-//			console.log(oModel);
+//			var th=this;
+//			
+//			$.ajax({
+//			    type: 'GET',
+//			    url: "https://api.blockchain.info/charts/market-price?timespan=1days&format=json", 
+//			    async: false
+//			  }).done(function(resp) {
+//			  })
+//			  .fail(function(err) {
+//			    console.log("error");
+//			    th.fnError();
+//			  });
+
 
 		},
 		onNavButtonPressed: function() {
@@ -28,6 +44,30 @@ sap.ui.define([
 				decimals: 4
 			});
 			return oFloatFormatter.format(value);
+		},
+		fnError: function () {
+			var dialog = new Dialog({
+				title: 'Error',
+				type: 'Message',
+				state: 'Error',
+				content: new Text({
+					text: 'The only error you can make is not even trying.'
+				}),
+				beginButton: new Button({
+					text: 'OK',
+					press: function () {
+						dialog.close();
+					}
+				}),
+				afterClose: function() {
+					dialog.destroy();
+				}
+			});
+
+			dialog.open();
+		},
+		fnSuccess: function(data){
+			console.log("ok");
 		},
 	
 	});

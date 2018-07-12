@@ -9,7 +9,7 @@ sap.ui.define([
 ], function(jQuery, VizFrame, FlattenedDataset, DimensionDefinition, MeasureDefinition, FeedItem, JSONModel) {
 	"use strict";
 
-	return sap.ui.jsfragment("sap.suite.ui.commons.PrjTest.fragment.VizChartWeek", {
+	return sap.ui.jsfragment("sap.Sonif.fragment.VizChartWeek", {
 		createContent: function(controller) {
 
 			var oVizFrame = new VizFrame({
@@ -63,7 +63,7 @@ sap.ui.define([
 				}
 			});
 			
-			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/PrjTestData.json");
+			var sDataPath = jQuery.sap.getModulePath("sap.Sonif.model.data", "/PrjTestData.json");
 			var oModel = new JSONModel(sDataPath);
 			controller.getView().setModel(oModel);
 

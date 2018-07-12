@@ -6,7 +6,7 @@ sap.ui.define([
 ], function(jQuery, Controller, JSONModel, MessageToast) {
 	"use strict";
 	
-	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.ProcessFlow", {
+	return Controller.extend("sap.Sonif.controller.ProcessFlow", {
 
 		onNavButtonPressed: function() {
 			this.getOwnerComponent().getRouter().navTo("home");
@@ -14,7 +14,7 @@ sap.ui.define([
 		
 		onInit: function (evt) {
 			// set explored app's demo model on this sample
-			var oImgModel = new JSONModel(jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/ProcessFlowData.json"));
+			var oImgModel = new JSONModel(jQuery.sap.getModulePath("sap.Sonif.model.data", "/ProcessFlowData.json"));
 			this.getView().setModel(oImgModel);
 
 			// set the possible screen sizes

@@ -11,11 +11,13 @@ sap.ui.define([
 ], function(jQuery, VizFrame, FlattenedDataset, DimensionDefinition, MeasureDefinition, FeedItem, JSONModel,ODataModel,MessageToast) {
 	"use strict";
 
-	return sap.ui.jsfragment("sap.suite.ui.commons.PrjTest.fragment.BtcChart", {
+	return sap.ui.jsfragment("sap.Sonif.fragment.BtcChart", {
+		
+	
 		createContent: function(controller) {
 			
 			//var sDataPath = jQuery.sap.getModulePath("https://api.blockchain.info/charts/market-price?timespan=30days&format=json");
-			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?timespan=all&format=json&cors=true");
+			var oModel = new JSONModel("https://api.blockchain.info/charts/market-price?timespan=all&format=json&cors=true",controller.fnSuccess,controller.fnError);
 //			var oModel = new ODataModel({serviceUrl: "https://api.blockchain.info/charts/market-price?timespan=all&format=json"},{
 //			    headers: {
 //			    	'Access-Control-Allow-Origin': '*'

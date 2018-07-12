@@ -4,7 +4,7 @@ sap.ui.define([
 ], function(Controller,History) {    //tine cont de ordinea de sus
 	"use strict";
 
-	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.NotFound", {
+	return Controller.extend("sap.Sonif.controller.NotFound", {
 		onInit: function() {  
 		},
 		onNavBack: function (oEvent) {

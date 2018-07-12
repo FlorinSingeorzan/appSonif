@@ -1,8 +1,8 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
 	xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:suite="sap.suite.ui.commons"
-	controllerName="sap.suite.ui.commons.PrjTest.controller.ChartContainer">
+	controllerName="sap.Sonif.controller.ChartContainer">
 	<Page backgroundDesign="Solid" showHeader="false">
-		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<mvc:XMLView viewName="sap.Sonif.view.Toolbar" />
 		<content>
 			<l:Grid defaultSpan="L12 M12 S12" class="sapUiResponsiveMargin"
 				position="Center" vSpacing="0" hSpacing="5">
@@ -19,7 +19,7 @@
 						title="{i18n>chartContainerBulletChartContentTitleWeek}">
 						<suite:content>
 							<core:Fragment
-								fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChartWeek"
+								fragmentName="sap.Sonif.fragment.VizChartWeek"
 								type="JS" />
 						</suite:content>
 					</suite:ChartContainerContent>
@@ -27,21 +27,21 @@
 						title="{i18n>chartMonthBtcHistory}">
 						<suite:content>
 							<core:Fragment
-								fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChartMonth"
+								fragmentName="sap.Sonif.fragment.VizChartMonth"
 								type="JS" />
 						</suite:content>
 					</suite:ChartContainerContent>
 					<suite:ChartContainerContent icon="sap-icon://vertical-bullet-chart"
 						title="{i18n>chartYearBtcHistory}">
 						<suite:content>
-							<core:Fragment fragmentName="sap.suite.ui.commons.PrjTest.fragment.VizChart"
+							<core:Fragment fragmentName="sap.Sonif.fragment.VizChart"
 								type="JS" />
 						</suite:content>
 					</suite:ChartContainerContent>
 					<suite:ChartContainerContent icon="sap-icon://check-availability"
 						title="{i18n>chartAllBtcHistory}">
 						<suite:content>
-							<core:Fragment fragmentName="sap.suite.ui.commons.PrjTest.fragment.BtcChart"
+							<core:Fragment fragmentName="sap.Sonif.fragment.BtcChart"
 								type="JS" />
 						</suite:content>
 					</suite:ChartContainerContent>

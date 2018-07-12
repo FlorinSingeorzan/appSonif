@@ -7,9 +7,9 @@ sap.ui.define([
 ], function(jQuery, Controller, JSONModel, NumberFormat, MobileLibrary) {
 	"use strict";
 
-	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.Startpage", {
+	return Controller.extend("sap.Sonif.controller.Startpage", {
 		onInit: function() {
-			var sDataPath = jQuery.sap.getModulePath("sap.suite.ui.commons.PrjTest.model.data", "/News.json");
+			var sDataPath = jQuery.sap.getModulePath("sap.Sonif.model.data", "/News.json");
 			var oModel = new JSONModel(sDataPath);
 			this.getView().setModel(oModel, "news");
 		},

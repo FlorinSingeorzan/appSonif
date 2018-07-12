@@ -9,7 +9,7 @@ sap.ui.define([
 ], function(jQuery, VizFrame, FlattenedDataset, DimensionDefinition, MeasureDefinition, FeedItem, JSONModel) {
 	"use strict";
 
-	return sap.ui.jsfragment("sap.suite.ui.commons.PrjTest.fragment.VizChartMonth", {
+	return sap.ui.jsfragment("sap.Sonif.fragment.VizChartMonth", {
 		createContent: function(controller) {
 			
 			//var sDataPath = jQuery.sap.getModulePath("https://api.blockchain.info/charts/market-price?timespan=30days&format=json");

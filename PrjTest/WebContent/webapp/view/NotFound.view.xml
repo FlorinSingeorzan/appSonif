@@ -1,5 +1,5 @@
 <mvc:View
-   controllerName="sap.suite.ui.commons.PrjTest.controller.NotFound"
+   controllerName="sap.Sonif.controller.NotFound"
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
    <MessagePage

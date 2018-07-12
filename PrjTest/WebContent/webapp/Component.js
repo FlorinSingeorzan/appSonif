@@ -5,7 +5,7 @@ sap.ui.define([
 ], function(UIComponent,JSONModel,Device) {
 	"use strict";
 
-	return UIComponent.extend("sap.suite.ui.commons.PrjTest.Component", {
+	return UIComponent.extend("sap.Sonif.Component", {
 
 		metadata: {
 			manifest: "json"
@@ -28,7 +28,7 @@ sap.ui.define([
 		createContent: function() {
 			// create root view
 			return sap.ui.view("AppView", {
-				viewName: "sap.suite.ui.commons.PrjTest.view.App",
+				viewName: "sap.Sonif.view.App",
 				type: "XML"
 			});
 		}

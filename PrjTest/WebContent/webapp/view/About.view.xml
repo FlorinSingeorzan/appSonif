@@ -1,11 +1,11 @@
-<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.About"
+<mvc:View controllerName="sap.Sonif.controller.About"
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
 	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart"
 	xmlns:f="sap.ui.layout.form">
 
 	<Page showHeader="false" backgroundDesign="Info">
 		<!-- <subHeader class="subHeaderDesign"> -->
-		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<mvc:XMLView viewName="sap.Sonif.view.Toolbar" />
 		<!-- </subHeader> -->
 		<Panel class="sapUiNoContentPadding">
 			<content>

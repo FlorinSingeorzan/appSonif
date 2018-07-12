@@ -6,7 +6,7 @@ sap.ui.define([
 ], function(Controller, MessageToast, JSONModel, NumberFormat) {    
 	"use strict";
 //	var singleCall=1;
-	return Controller.extend("sap.suite.ui.commons.PrjTest.controller.VCurrency", {
+	return Controller.extend("sap.Sonif.controller.VCurrency", {
 		onInit: function() {  
 		},
 		eth:function(){

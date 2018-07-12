@@ -1,10 +1,10 @@
 <mvc:View height="100%"
-		controllerName="sap.suite.ui.commons.PrjTest.controller.ProcessFlow"
+		controllerName="sap.Sonif.controller.ProcessFlow"
 		xmlns:mvc="sap.ui.core.mvc"
 		xmlns="sap.m"
 		xmlns:f="sap.ui.layout.form">
 	<Page class="sapUiContentPadding" showHeader="false">
-		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<mvc:XMLView viewName="sap.Sonif.view.Toolbar" />
 		<content>
 			<f:SimpleForm labelSpanL="6"
 						labelSpanM="6"

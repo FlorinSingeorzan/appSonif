@@ -1,9 +1,9 @@
 <mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
 	xmlns:layout="sap.ui.layout" xmlns:suite="sap.suite.ui.commons"
-	controllerName="sap.suite.ui.commons.PrjTest.controller.NewsFeed"
+	controllerName="sap.Sonif.controller.NewsFeed"
 	displayBlock="true">
 	<Page showHeader="false" backgroundDesign="Solid">
-		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<mvc:XMLView viewName="sap.Sonif.view.Toolbar" />
 		<content>
 				<List headerText="What's new" items="{path: 'news>/News', templateShareable:true}">
 					<FeedListItem templateShareable="true" sender="{news>content}"
@@ -16,5 +16,5 @@
 				</List>
 		</content>
 	</Page>
-	<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+	<mvc:XMLView viewName="sap.Sonif.view.Toolbar" />
 </mvc:View>

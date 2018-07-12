@@ -1,10 +1,10 @@
-<mvc:View controllerName="sap.suite.ui.commons.PrjTest.controller.Detail"
+<mvc:View controllerName="sap.Sonif.controller.Detail"
 	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
 	xmlns:layout="sap.ui.layout" xmlns:microchart="sap.suite.ui.microchart"
 	height="100%" displayBlock="true" xmlns:suite="sap.suite.ui.commons">
 
 	<Page showHeader="false">
-		<mvc:XMLView viewName="sap.suite.ui.commons.PrjTest.view.Toolbar" />
+		<mvc:XMLView viewName="sap.Sonif.view.Toolbar" />
 		<FlexBox width="auto" height="43px" justifyContent="Center">
 		<Text text="{cryptocurrencyData>currencyId}"/>
 		<Text text="{cryptocurrencyData>/name}"/>
